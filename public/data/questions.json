@@ -128,5 +128,200 @@
         "correctAnswer": "J.K. Rowlingová",
         "difficulty": "easy",
         "category": "Literatura"
+    },
+    {
+        "id": 1,
+        "question": "Které město je známé jako \"město světel\"?",
+        "options": [
+            "Paříž",
+            "Londýn",
+            "New York",
+            "Tokyo"
+        ],
+        "correctAnswer": "Paříž",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 2,
+        "question": "Který malíř vytvořil obraz Mona Lisa?",
+        "options": [
+            "Leonardo da Vinci",
+            "Pablo Picasso",
+            "Vincent van Gogh",
+            "Claude Monet"
+        ],
+        "correctAnswer": "Leonardo da Vinci",
+        "difficulty": "medium",
+        "category": "Umění"
+    },
+    {
+        "id": 3,
+        "question": "Která planeta ve sluneční soustavě je největší?",
+        "options": [
+            "Jupiter",
+            "Saturn",
+            "Země",
+            "Neptun"
+        ],
+        "correctAnswer": "Jupiter",
+        "difficulty": "medium",
+        "category": "Astronomie"
+    },
+    {
+        "id": 4,
+        "question": "Kdo napsal knihu \"Na západní frontě klid\"?",
+        "options": [
+            "Erich Maria Remarque",
+            "George Orwell",
+            "Hemingway",
+            "Franz Kafka"
+        ],
+        "correctAnswer": "Erich Maria Remarque",
+        "difficulty": "medium",
+        "category": "Literatura"
+    },
+    {
+        "id": 5,
+        "question": "Který prvek má chemickou značku 'Fe'?",
+        "options": [
+            "Železo",
+            "Fluor",
+            "Fosfor",
+            "Hliník"
+        ],
+        "correctAnswer": "Železo",
+        "difficulty": "medium",
+        "category": "Chemie"
+    },
+    {
+        "id": 6,
+        "question": "Který skladatel je autorem symfonie č. 9 \"Óda na radost\"?",
+        "options": [
+            "Beethoven",
+            "Mozart",
+            "Bach",
+            "Schubert"
+        ],
+        "correctAnswer": "Beethoven",
+        "difficulty": "medium",
+        "category": "Hudba"
+    },
+    {
+        "id": 7,
+        "question": "Kdo objevil gravitaci?",
+        "options": [
+            "Isaac Newton",
+            "Albert Einstein",
+            "Galileo Galilei",
+            "Nikola Tesla"
+        ],
+        "correctAnswer": "Isaac Newton",
+        "difficulty": "medium",
+        "category": "Fyzika"
+    },
+    {
+        "id": 8,
+        "question": "Které moře je největší na světě?",
+        "options": [
+            "Korálové moře",
+            "Černé moře",
+            "Středozemní moře",
+            "Baltské moře"
+        ],
+        "correctAnswer": "Korálové moře",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 9,
+        "question": "Jaké je hlavní město Kanady?",
+        "options": [
+            "Ottawa",
+            "Toronto",
+            "Vancouver",
+            "Montreal"
+        ],
+        "correctAnswer": "Ottawa",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 10,
+        "question": "Kolik hráčů je na hřišti během fotbalového zápasu?",
+        "options": [
+            "22",
+            "20",
+            "24",
+            "18"
+        ],
+        "correctAnswer": "22",
+        "difficulty": "medium",
+        "category": "Sport"
+    },
+    {
+        "id": 11,
+        "question": "Který film vyhrál Oscara za nejlepší film v roce 1994?",
+        "options": [
+            "Forrest Gump",
+            "Pulp Fiction",
+            "Shawshank Redemption",
+            "Lion King"
+        ],
+        "correctAnswer": "Forrest Gump",
+        "difficulty": "medium",
+        "category": "Filmy"
+    },
+    {
+        "id": 12,
+        "question": "Jaký je národní sport Kanady?",
+        "options": [
+            "Lední hokej",
+            "Lacrosse",
+            "Fotbal",
+            "Basketbal"
+        ],
+        "correctAnswer": "Lacrosse",
+        "difficulty": "medium",
+        "category": "Sport"
+    },
+    {
+        "id": 13,
+        "question": "Která země je známá svou výrobou švýcarských hodinek?",
+        "options": [
+            "Švýcarsko",
+            "Německo",
+            "Japonsko",
+            "Francie"
+        ],
+        "correctAnswer": "Švýcarsko",
+        "difficulty": "medium",
+        "category": "Historie"
+    },
+    {
+        "id": 14,
+        "question": "Který orgán v lidském těle produkuje inzulin?",
+        "options": [
+            "Slinivka",
+            "Játra",
+            "Ledviny",
+            "Žaludek"
+        ],
+        "correctAnswer": "Slinivka",
+        "difficulty": "medium",
+        "category": "Biologie"
+    },
+    {
+        "id": 15,
+        "question": "Které zvíře je nejrychlejší na souši?",
+        "options": [
+            "Gepard",
+            "Lev",
+            "Antilopa",
+            "Klokan"
+        ],
+        "correctAnswer": "Gepard",
+        "difficulty": "medium",
+        "category": "Zvířata"
     }
 ]

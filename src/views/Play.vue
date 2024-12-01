@@ -82,7 +82,7 @@ export default {
             try {
                 const response = await fetch("/data/questions.json");
                 const data = await response.json();
-                this.question = data.filter( (q) => q.difficulty === "easy" );
+                this.question = data.filter( (q) => q.difficulty === "medium" );
                 
                 if(this.question.length > 0) {
                     this.currentQuestionIndex = Math.floor(Math.random() * this.question.length);
@@ -126,6 +126,8 @@ export default {
         },
 
         checkAnswer(option) {
+            clearInterval(this.interval); // Okamžitě zastav timer
+
             const correctAnswer = this.currentQuestion.correctAnswer;
             const choices = document.querySelectorAll('.choice');
 
@@ -143,7 +145,7 @@ export default {
                 }
             });
 
-
+            // Přechod na další otázku po 1,5 sekundy
             setTimeout(() => {
                 if (this.lives === 0 ){
                     alert("Konec hry");
@@ -178,11 +180,13 @@ export default {
         },
 
         resetGame() {
+            clearInterval(this.interval);
             this.score = 0;
             this.lives = 3;
-            this.currentQuestionIndex =0;
+            this.currentQuestionIndex = 0;
             this.timer = 10;
             this.startTimer();
+            this.loadQuestions();
         }
     }
 };
