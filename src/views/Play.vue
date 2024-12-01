@@ -11,6 +11,12 @@
             </div>
         </div>
 
+        <div class="timer-bar-container">
+            <div class="timer-bar" :style="{ width: timerWidth + '%' }">
+
+            </div>
+        </div>
+
         <div v-if="loading">
             Načítání otázek...
         </div>
@@ -49,9 +55,11 @@ export default {
             score: 0,
             lives: 3,
             currentQuestionIndex: 0,
-            question: "Které město je hlavním městem ČR?",
+            question: [],
             options: [],
             loading: true,
+            timer: 10,
+            interval: null,
         };
     },
 
@@ -59,6 +67,10 @@ export default {
         currentQuestion() {
             return this.question[this.currentQuestionIndex] || {};
         },
+
+        timerWidth() {
+            return (this.timer / 10) * 100;
+        }
     },
 
     created() {
@@ -77,10 +89,39 @@ export default {
                 }
 
                 this.loading = false;
+                this.startTimer();
             }
             catch (error) {
                 console.error("chyba při načítání otázek: ", error);
                 this.loading = false;
+            }
+        },
+
+        startTimer() {
+            // zastavi predchozi intervat, pokud nejaky bezi
+            if(this.interval) {
+                clearInterval(this.interval);
+            }
+            // Nastavi novy interval
+            this.interval = setInterval(() => {
+                if(this.timer > 0) {
+                    this.timer -= 1;
+                } else {
+                    clearInterval(this.interval);
+                    this.timerExpired();
+                }
+            }, 1000);
+        },
+
+        timerExpired() {
+            // minus 1 zivot
+            this.lives -=1;
+            if (this.lives === 0) {
+                alert("Konec hry, ztratili jste všechny životy!");
+                this.resetGame();
+            } else {
+                this.clearChoices();
+                this.nextQuestion();
             }
         },
 
@@ -127,6 +168,8 @@ export default {
         nextQuestion() {
             if (this.currentQuestionIndex < this.question.length -1) {
                 this.currentQuestionIndex += 1;
+                this.timer = 10;
+                this.startTimer();
             }
             else {
                 alert("Gratulace! Odpověďel jsi na všechny otázky!");
@@ -138,6 +181,8 @@ export default {
             this.score = 0;
             this.lives = 3;
             this.currentQuestionIndex =0;
+            this.timer = 10;
+            this.startTimer();
         }
     }
 };
@@ -146,18 +191,22 @@ export default {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <style scoped>
+
+.timer-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.timer-bar {
+    height: 100%;
+    background-color: #4caf50; /* Zelená barva */
+    transition: width 1s linear; /* Plynulé změny šířky */
+}
 
 .correct {
     background-color: green;
