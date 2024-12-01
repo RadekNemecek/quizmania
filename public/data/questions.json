@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "question": "Které je hlavní město České republiky?",
+        "options": [
+            "Brno",
+            "Praha",
+            "Ostrava",
+            "Plzeň"
+        ],
+        "correctAnswer": "Praha",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 2,
+        "question": "Kolik má člověk prstů na jedné ruce?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correctAnswer": "5",
+        "difficulty": "easy",
+        "category": "Biologie"
+    },
+    {
+        "id": 3,
+        "question": "Který plyn je nejvíce zastoupen v atmosféře?",
+        "options": [
+            "Kyslík",
+            "Dusík",
+            "Oxid uhličitý",
+            "Vodík"
+        ],
+        "correctAnswer": "Dusík",
+        "difficulty": "easy",
+        "category": "Chemie"
+    },
+    {
+        "id": 4,
+        "question": "Kolik měsíců má rok?",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "correctAnswer": "12",
+        "difficulty": "easy",
+        "category": "Obecné znalosti"
+    },
+    {
+        "id": 5,
+        "question": "Jaké je největší zvíře na světě?",
+        "options": [
+            "Slon",
+            "Modrá velryba",
+            "Žirafa",
+            "Hroch"
+        ],
+        "correctAnswer": "Modrá velryba",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 6,
+        "question": "Který kontinent je největší?",
+        "options": [
+            "Afrika",
+            "Asie",
+            "Evropa",
+            "Antarktida"
+        ],
+        "correctAnswer": "Asie",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 7,
+        "question": "Která planeta je nejblíže ke Slunci?",
+        "options": [
+            "Venuše",
+            "Mars",
+            "Merkur",
+            "Země"
+        ],
+        "correctAnswer": "Merkur",
+        "difficulty": "easy",
+        "category": "Astronomie"
+    },
+    {
+        "id": 8,
+        "question": "Kolik hodin má den?",
+        "options": [
+            "12",
+            "24",
+            "36",
+            "48"
+        ],
+        "correctAnswer": "24",
+        "difficulty": "easy",
+        "category": "Obecné znalosti"
+    },
+    {
+        "id": 9,
+        "question": "Která barva vznikne smícháním modré a žluté?",
+        "options": [
+            "Zelená",
+            "Oranžová",
+            "Fialová",
+            "Hnědá"
+        ],
+        "correctAnswer": "Zelená",
+        "difficulty": "easy",
+        "category": "Umění"
+    },
+    {
+        "id": 10,
+        "question": "Jak se jmenuje autor knihy 'Harry Potter'?",
+        "options": [
+            "J.R.R. Tolkien",
+            "George R.R. Martin",
+            "J.K. Rowlingová",
+            "Stephen King"
+        ],
+        "correctAnswer": "J.K. Rowlingová",
+        "difficulty": "easy",
+        "category": "Literatura"
+    }
+]
