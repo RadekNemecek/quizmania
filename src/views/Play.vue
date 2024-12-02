@@ -1,5 +1,25 @@
 <template>
-  <div class="play">
+     <div v-if="difficultyBox" class="before-start">
+        <h2>Nová hra</h2>
+        <p>
+            Vyber obtížnost
+        </p>
+        <div class="difficulty">
+            <div class="child">
+                <label for="">Dítě</label>
+            </div>
+            <div class="adult">
+                <label for="">Dospělý</label>
+            </div>
+            <div class="scientist">
+                <label for="">Vědátor</label>
+            </div>
+        </div>
+        <button>Start</button>
+    </div>
+
+
+  <div v-if="play" class="play">
         <div class="info">
             <div class="score">
                 
@@ -7,7 +27,8 @@
                 
             </div>
             <div class="life">
-                ❤ {{ lives }} 
+                <!-- ❤ {{ lives }}  -->
+                <span v-for="n in lives" :key="n" class="heart">❤</span>
             </div>
         </div>
 
@@ -58,9 +79,11 @@ export default {
             question: [],
             options: [],
             loading: true,
-            timer: 10,
+            timer: 1000,
             interval: null,
             baseScore: 100,
+            play: true,
+            difficultyBox: false,
         };
     },
 
@@ -79,24 +102,48 @@ export default {
     },
 
     methods: {
+        // async loadQuestions() {
+        //     try {
+        //         const response = await fetch("/data/questions.json");
+        //         const data = await response.json();
+        //         this.question = data.filter( (q) => q.difficulty === "medium" );
+                
+        //         if(this.question.length > 0) {
+        //             this.currentQuestionIndex = Math.floor(Math.random() * this.question.length);
+        //         }
+
+        //         this.loading = false;
+        //         this.startTimer();
+        //     }
+        //     catch (error) {
+        //         console.error("chyba při načítání otázek: ", error);
+        //         this.loading = false;
+        //     }
+        // },
+
+
+
+
         async loadQuestions() {
             try {
                 const response = await fetch("/data/questions.json");
                 const data = await response.json();
-                this.question = data.filter( (q) => q.difficulty === "medium" );
+                this.question = data.filter((q) => q.difficulty === "medium");
                 
-                if(this.question.length > 0) {
-                    this.currentQuestionIndex = Math.floor(Math.random() * this.question.length);
+                if (this.question.length > 0) {
+                    // Zamíchej otázky
+                    this.question.sort(() => Math.random() - 0.5);
+                    this.currentQuestionIndex = 0; // Vždy začni od první otázky
                 }
 
                 this.loading = false;
                 this.startTimer();
-            }
-            catch (error) {
-                console.error("chyba při načítání otázek: ", error);
+            } catch (error) {
+                console.error("Chyba při načítání otázek: ", error);
                 this.loading = false;
             }
         },
+
 
         startTimer() {
             // zastavi predchozi intervat, pokud nejaky bezi
@@ -181,6 +228,25 @@ export default {
                 this.resetGame();
             }
         },
+
+
+        // nextQuestion() {
+        //     if (this.question.length > 0) {
+        //         // Vyberte náhodný index
+        //         const randomIndex = Math.floor(Math.random() * this.question.length);
+        //         // Nastavte aktuální otázku
+        //         this.currentQuestionIndex = randomIndex;
+        //         // Odstraňte otázku z pole, aby se neopakovala
+        //         this.question.splice(randomIndex, 1);
+        //         // Resetujte časovač
+        //         this.timer = 10;
+        //         this.startTimer();
+        //     } else {
+        //         alert("Gratulace! Odpověděl jsi na všechny otázky!");
+        //         this.resetGame();
+        //     }
+        // },
+
 
         resetGame() {
             clearInterval(this.interval);
@@ -273,6 +339,45 @@ p {
     font-size: 1.7rem;
     font-weight: 600;
 
+}
+
+.before-start {
+    border-radius: 20px;
+    border: 2px solid #219EBC;
+    
+    padding: 20px;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+
+}
+
+.difficulty {
+    display: flex;
+    gap: 10px;
+}
+
+.child, .adult, .scientist {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 25px 0px;
+    padding: 10px;
+    width: 3.3rem;
+}
+
+button {
+    border: 1px solid #219EBC;;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background: transparent;
+    color: #219EBC;
+    font-size: 1.2rem;
+    
 }
 
 </style>

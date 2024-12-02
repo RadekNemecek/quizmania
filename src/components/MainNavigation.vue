@@ -4,6 +4,7 @@
             <li> <router-link to="/">Domů</router-link></li>
             <li> <router-link to="/play">Hrát</router-link></li>
             <li> <router-link to="/about">O hře</router-link></li>
+            <li> <router-link to="/devel">devel</router-link></li>
         </ul>
 
     </nav>

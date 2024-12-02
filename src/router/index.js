@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Play from '../views/Play.vue'
 import About from '../views/About.vue'
+import Devel from '@/views/Devel.vue'
 
 const routes = [
     { path: '/', name: 'Home', component: Home }, // Výchozí cesta
     { path: '/play', name: 'Play', component: Play }, // Stránka Hra
     { path: '/about', name: 'About', component: About }, // Stránka O hře
+    { path: '/devel', name: 'Devel', component: Devel }, // Stránka O hře
 ]
 
 const router = createRouter({

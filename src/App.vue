@@ -1,7 +1,6 @@
 <template>
     <header>
-        <!-- <img src="../public/img/kindpng_button.png" alt="logo">
-        <h1>Mania</h1> -->
+        
         <MainNavigation />
         
     </header>
