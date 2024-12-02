@@ -323,5 +323,201 @@
         "correctAnswer": "Gepard",
         "difficulty": "medium",
         "category": "Zvířata"
-    }
+    },
+
+        {
+            "id": 51,
+            "question": "Které město je hlavním městem Kanady?",
+            "options": [
+                "Toronto",
+                "Vancouver",
+                "Ottawa",
+                "Montreal"
+            ],
+            "correctAnswer": "Ottawa",
+            "difficulty": "medium",
+            "category": "Geografie"
+        },
+        {
+            "id": 52,
+            "question": "Kdo napsal román '1984'?",
+            "options": [
+                "Aldous Huxley",
+                "George Orwell",
+                "Ray Bradbury",
+                "H.G. Wells"
+            ],
+            "correctAnswer": "George Orwell",
+            "difficulty": "medium",
+            "category": "Literatura"
+        },
+        {
+            "id": 53,
+            "question": "Jaká je chemická značka pro zlato?",
+            "options": [
+                "Ag",
+                "Au",
+                "Pb",
+                "Hg"
+            ],
+            "correctAnswer": "Au",
+            "difficulty": "medium",
+            "category": "Věda"
+        },
+        {
+            "id": 54,
+            "question": "Ve kterém roce skončila druhá světová válka?",
+            "options": [
+                "1944",
+                "1945",
+                "1946",
+                "1947"
+            ],
+            "correctAnswer": "1945",
+            "difficulty": "medium",
+            "category": "Historie"
+        },
+        {
+            "id": 55,
+            "question": "Která planeta je největší ve sluneční soustavě?",
+            "options": [
+                "Saturn",
+                "Jupiter",
+                "Neptun",
+                "Uran"
+            ],
+            "correctAnswer": "Jupiter",
+            "difficulty": "medium",
+            "category": "Astronomie"
+        },
+        {
+            "id": 56,
+            "question": "Kdo složil symfonii 'Osudová'?",
+            "options": [
+                "Wolfgang Amadeus Mozart",
+                "Ludwig van Beethoven",
+                "Franz Schubert",
+                "Antonín Dvořák"
+            ],
+            "correctAnswer": "Ludwig van Beethoven",
+            "difficulty": "medium",
+            "category": "Hudba"
+        },
+        {
+            "id": 57,
+            "question": "Jak se jmenuje nejvyšší hora Evropy?",
+            "options": [
+                "Matterhorn",
+                "Mont Blanc",
+                "Elbrus",
+                "Dufourspitze"
+            ],
+            "correctAnswer": "Mont Blanc",
+            "difficulty": "medium",
+            "category": "Geografie"
+        },
+        {
+            "id": 58,
+            "question": "Který prvek má atomové číslo 8?",
+            "options": [
+                "Dusík",
+                "Kyslík",
+                "Uhlík",
+                "Vodík"
+            ],
+            "correctAnswer": "Kyslík",
+            "difficulty": "medium",
+            "category": "Chemie"
+        },
+        {
+            "id": 59,
+            "question": "Kdo byl prvním prezidentem Československa?",
+            "options": [
+                "Tomáš Garrigue Masaryk",
+                "Edvard Beneš",
+                "Klement Gottwald",
+                "Milan Rastislav Štefánik"
+            ],
+            "correctAnswer": "Tomáš Garrigue Masaryk",
+            "difficulty": "medium",
+            "category": "Historie"
+        },
+        {
+            "id": 60,
+            "question": "Kolik hráčů má fotbalový tým na hřišti během zápasu?",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "correctAnswer": "11",
+            "difficulty": "medium",
+            "category": "Sport"
+        },
+        {
+            "id": 61,
+            "question": "Jaké je největší české jezero?",
+            "options": [
+                "Lipno",
+                "Máchovo jezero",
+                "Černé jezero",
+                "Slapy"
+            ],
+            "correctAnswer": "Lipno",
+            "difficulty": "medium",
+            "category": "Geografie"
+        },
+        {
+            "id": 62,
+            "question": "Jaká je nejvyšší budova na světě?",
+            "options": [
+                "Shanghai Tower",
+                "Burj Khalifa",
+                "Empire State Building",
+                "Eiffelova věž"
+            ],
+            "correctAnswer": "Burj Khalifa",
+            "difficulty": "medium",
+            "category": "Architektura"
+        },
+        {
+            "id": 63,
+            "question": "Jaká krevní skupina je univerzální dárce?",
+            "options": [
+                "A",
+                "B",
+                "AB",
+                "0"
+            ],
+            "correctAnswer": "0",
+            "difficulty": "medium",
+            "category": "Biologie"
+        },
+        {
+            "id": 64,
+            "question": "Který kontinent je nejmenší?",
+            "options": [
+                "Austrálie",
+                "Antarktida",
+                "Evropa",
+                "Jižní Amerika"
+            ],
+            "correctAnswer": "Austrálie",
+            "difficulty": "medium",
+            "category": "Geografie"
+        },
+        {
+            "id": 65,
+            "question": "Jaký je národní strom České republiky?",
+            "options": [
+                "Javor",
+                "Dub",
+                "Lípa",
+                "Buk"
+            ],
+            "correctAnswer": "Lípa",
+            "difficulty": "medium",
+            "category": "Příroda"
+        }
 ]

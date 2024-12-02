@@ -53,13 +53,14 @@ export default {
     data() {
         return {
             score: 0,
-            lives: 3,
+            lives: 5,
             currentQuestionIndex: 0,
             question: [],
             options: [],
             loading: true,
             timer: 10,
             interval: null,
+            baseScore: 100,
         };
     },
 
@@ -136,7 +137,8 @@ export default {
                 if (choice.textContent.trim() === option) {
                     if (option === correctAnswer) {
                         choice.classList.add('correct');
-                        this.score += 100;
+                        const timeMultiplier = this.timer;
+                        this.score += this.baseScore * timeMultiplier;
                     } else {
                         choice.classList.add('incorrect');
                         this.lives -= 1;
@@ -150,6 +152,7 @@ export default {
                 if (this.lives === 0 ){
                     alert("Konec hry");
                     this.resetGame();
+                    this.clearChoices();
                 }
                 else {
                     this.nextQuestion();
