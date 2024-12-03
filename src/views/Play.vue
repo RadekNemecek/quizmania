@@ -1,23 +1,6 @@
 <template>
-     <div v-if="difficultyBox" class="before-start">
-        <h2>Nová hra</h2>
-        <p>
-            Vyber obtížnost
-        </p>
-        <div class="difficulty">
-            <div class="child">
-                <label for="">Dítě</label>
-            </div>
-            <div class="adult">
-                <label for="">Dospělý</label>
-            </div>
-            <div class="scientist">
-                <label for="">Vědátor</label>
-            </div>
-        </div>
-        <button>Start</button>
-    </div>
-
+     
+    <DifficultyBox v-if="DifficultyModal" />
 
   <div v-if="play" class="play">
         <div class="info">
@@ -69,7 +52,13 @@
 
 
 <script>
+import DifficultyBox from '@/components/DifficultyBox.vue';
+
 export default {
+    components: {
+            DifficultyBox
+        },
+
     name: "play",
     data() {
         return {
@@ -82,10 +71,11 @@ export default {
             timer: 1000,
             interval: null,
             baseScore: 100,
-            play: true,
-            difficultyBox: false,
+            play: false,
+            DifficultyModal: true,
         };
     },
+
 
     computed: {
         currentQuestion() {
@@ -120,7 +110,6 @@ export default {
         //         this.loading = false;
         //     }
         // },
-
 
 
 
@@ -341,43 +330,6 @@ p {
 
 }
 
-.before-start {
-    border-radius: 20px;
-    border: 2px solid #219EBC;
-    
-    padding: 20px;
-    position: absolute;
-    top: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: auto;
 
-}
-
-.difficulty {
-    display: flex;
-    gap: 10px;
-}
-
-.child, .adult, .scientist {
-    text-align: center;
-    border: 1px solid;
-    border-radius: 10px;
-    margin: 25px 0px;
-    padding: 10px;
-    width: 3.3rem;
-}
-
-button {
-    border: 1px solid #219EBC;;
-    border-radius: 10px;
-    padding: 5px 15px;
-    background: transparent;
-    color: #219EBC;
-    font-size: 1.2rem;
-    
-}
 
 </style>
