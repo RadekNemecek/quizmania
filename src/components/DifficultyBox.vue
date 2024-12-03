@@ -14,7 +14,7 @@
 
             </div>
         </div>
-        <button @click="loadQuestions">Start</button>
+        <button @click="notifyLoadQuestions">Start</button>
     </div>
 </template>
 
@@ -31,6 +31,11 @@
             selectDifficulty(level) {
             this.selectedDifficulty = level;
             },
+
+            notifyLoadQuestions() {
+                this.$emit('loadQuestions');
+            },
+
         }
     }
 

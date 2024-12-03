@@ -19,7 +19,8 @@ html, body {
 
 #app {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    /* max-width: 00; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,3 +28,4 @@ html, body {
     padding: 0px 30px;
     margin: 0 auto;
 }
+

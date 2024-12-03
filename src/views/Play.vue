@@ -1,6 +1,6 @@
 <template>
      
-    <DifficultyBox v-if="DifficultyModal" />
+    <DifficultyBox v-if="DifficultyModal" @loadQuestions="loadQuestions" />
 
   <div v-if="play" class="play">
         <div class="info">
@@ -87,33 +87,8 @@ export default {
         }
     },
 
-    created() {
-        this.loadQuestions();
-    },
-
     methods: {
-        // async loadQuestions() {
-        //     try {
-        //         const response = await fetch("/data/questions.json");
-        //         const data = await response.json();
-        //         this.question = data.filter( (q) => q.difficulty === "medium" );
-                
-        //         if(this.question.length > 0) {
-        //             this.currentQuestionIndex = Math.floor(Math.random() * this.question.length);
-        //         }
-
-        //         this.loading = false;
-        //         this.startTimer();
-        //     }
-        //     catch (error) {
-        //         console.error("chyba při načítání otázek: ", error);
-        //         this.loading = false;
-        //     }
-        // },
-
-
-
-        async loadQuestions() {
+          async loadQuestions() {
             try {
                 const response = await fetch("/data/questions.json");
                 const data = await response.json();
@@ -126,6 +101,8 @@ export default {
                 }
 
                 this.loading = false;
+                this.DifficultyModal = false;
+                this.play = true;
                 this.startTimer();
             } catch (error) {
                 console.error("Chyba při načítání otázek: ", error);
@@ -147,7 +124,7 @@ export default {
                     clearInterval(this.interval);
                     this.timerExpired();
                 }
-            }, 1000);
+            }, 10000);
         },
 
         timerExpired() {
@@ -202,9 +179,7 @@ export default {
             choices.forEach(choice => {
                 choice.classList.remove('correct', 'incorrect');
             });
-        },
-
-           
+        },           
 
         nextQuestion() {
             if (this.currentQuestionIndex < this.question.length -1) {
@@ -217,25 +192,6 @@ export default {
                 this.resetGame();
             }
         },
-
-
-        // nextQuestion() {
-        //     if (this.question.length > 0) {
-        //         // Vyberte náhodný index
-        //         const randomIndex = Math.floor(Math.random() * this.question.length);
-        //         // Nastavte aktuální otázku
-        //         this.currentQuestionIndex = randomIndex;
-        //         // Odstraňte otázku z pole, aby se neopakovala
-        //         this.question.splice(randomIndex, 1);
-        //         // Resetujte časovač
-        //         this.timer = 10;
-        //         this.startTimer();
-        //     } else {
-        //         alert("Gratulace! Odpověděl jsi na všechny otázky!");
-        //         this.resetGame();
-        //     }
-        // },
-
 
         resetGame() {
             clearInterval(this.interval);
@@ -293,6 +249,7 @@ export default {
     left: 50%;
     transform: translate(-50%);
     width: 90%;
+    max-width: 400px;
 }
 
 .choice {
