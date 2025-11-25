@@ -130,7 +130,7 @@
         "category": "Literatura"
     },
     {
-        "id": 1,
+        "id": 11,
         "question": "Které město je známé jako \"město světel\"?",
         "options": [
             "Paříž",
@@ -143,7 +143,7 @@
         "category": "Geografie"
     },
     {
-        "id": 2,
+        "id": 12,
         "question": "Který malíř vytvořil obraz Mona Lisa?",
         "options": [
             "Leonardo da Vinci",
@@ -156,7 +156,7 @@
         "category": "Umění"
     },
     {
-        "id": 3,
+        "id": 13,
         "question": "Která planeta ve sluneční soustavě je největší?",
         "options": [
             "Jupiter",
@@ -169,7 +169,7 @@
         "category": "Astronomie"
     },
     {
-        "id": 4,
+        "id": 14,
         "question": "Kdo napsal knihu \"Na západní frontě klid\"?",
         "options": [
             "Erich Maria Remarque",
@@ -182,7 +182,7 @@
         "category": "Literatura"
     },
     {
-        "id": 5,
+        "id": 15,
         "question": "Který prvek má chemickou značku 'Fe'?",
         "options": [
             "Železo",
@@ -195,7 +195,7 @@
         "category": "Chemie"
     },
     {
-        "id": 6,
+        "id": 16,
         "question": "Který skladatel je autorem symfonie č. 9 \"Óda na radost\"?",
         "options": [
             "Beethoven",
@@ -208,7 +208,7 @@
         "category": "Hudba"
     },
     {
-        "id": 7,
+        "id": 17,
         "question": "Kdo objevil gravitaci?",
         "options": [
             "Isaac Newton",
@@ -221,7 +221,7 @@
         "category": "Fyzika"
     },
     {
-        "id": 8,
+        "id": 18,
         "question": "Které moře je největší na světě?",
         "options": [
             "Korálové moře",
@@ -234,7 +234,7 @@
         "category": "Geografie"
     },
     {
-        "id": 9,
+        "id": 19,
         "question": "Jaké je hlavní město Kanady?",
         "options": [
             "Ottawa",
@@ -247,7 +247,7 @@
         "category": "Geografie"
     },
     {
-        "id": 10,
+        "id": 20,
         "question": "Kolik hráčů je na hřišti během fotbalového zápasu?",
         "options": [
             "22",
@@ -260,7 +260,7 @@
         "category": "Sport"
     },
     {
-        "id": 11,
+        "id": 21,
         "question": "Který film vyhrál Oscara za nejlepší film v roce 1994?",
         "options": [
             "Forrest Gump",
@@ -273,7 +273,7 @@
         "category": "Filmy"
     },
     {
-        "id": 12,
+        "id": 22,
         "question": "Jaký je národní sport Kanady?",
         "options": [
             "Lední hokej",
@@ -286,7 +286,7 @@
         "category": "Sport"
     },
     {
-        "id": 13,
+        "id": 23,
         "question": "Která země je známá svou výrobou švýcarských hodinek?",
         "options": [
             "Švýcarsko",
@@ -299,7 +299,7 @@
         "category": "Historie"
     },
     {
-        "id": 14,
+        "id": 24,
         "question": "Který orgán v lidském těle produkuje inzulin?",
         "options": [
             "Slinivka",
@@ -312,7 +312,7 @@
         "category": "Biologie"
     },
     {
-        "id": 15,
+        "id": 25,
         "question": "Které zvíře je nejrychlejší na souši?",
         "options": [
             "Gepard",
@@ -326,7 +326,7 @@
     },
 
         {
-            "id": 51,
+            "id":26,
             "question": "Které město je hlavním městem Kanady?",
             "options": [
                 "Toronto",
@@ -339,7 +339,7 @@
             "category": "Geografie"
         },
         {
-            "id": 52,
+            "id": 27,
             "question": "Kdo napsal román '1984'?",
             "options": [
                 "Aldous Huxley",
@@ -352,7 +352,7 @@
             "category": "Literatura"
         },
         {
-            "id": 53,
+            "id": 28,
             "question": "Jaká je chemická značka pro zlato?",
             "options": [
                 "Ag",
@@ -365,7 +365,7 @@
             "category": "Věda"
         },
         {
-            "id": 54,
+            "id": 29,
             "question": "Ve kterém roce skončila druhá světová válka?",
             "options": [
                 "1944",
@@ -378,7 +378,7 @@
             "category": "Historie"
         },
         {
-            "id": 55,
+            "id": 30,
             "question": "Která planeta je největší ve sluneční soustavě?",
             "options": [
                 "Saturn",
@@ -391,7 +391,7 @@
             "category": "Astronomie"
         },
         {
-            "id": 56,
+            "id": 31,
             "question": "Kdo složil symfonii 'Osudová'?",
             "options": [
                 "Wolfgang Amadeus Mozart",
@@ -404,7 +404,7 @@
             "category": "Hudba"
         },
         {
-            "id": 57,
+            "id": 32,
             "question": "Jak se jmenuje nejvyšší hora Evropy?",
             "options": [
                 "Matterhorn",
@@ -417,7 +417,7 @@
             "category": "Geografie"
         },
         {
-            "id": 58,
+            "id": 33,
             "question": "Který prvek má atomové číslo 8?",
             "options": [
                 "Dusík",
@@ -430,7 +430,7 @@
             "category": "Chemie"
         },
         {
-            "id": 59,
+            "id": 34,
             "question": "Kdo byl prvním prezidentem Československa?",
             "options": [
                 "Tomáš Garrigue Masaryk",
@@ -443,7 +443,7 @@
             "category": "Historie"
         },
         {
-            "id": 60,
+            "id": 35,
             "question": "Kolik hráčů má fotbalový tým na hřišti během zápasu?",
             "options": [
                 "10",
@@ -456,7 +456,7 @@
             "category": "Sport"
         },
         {
-            "id": 61,
+            "id": 36,
             "question": "Jaké je největší české jezero?",
             "options": [
                 "Lipno",
@@ -469,7 +469,7 @@
             "category": "Geografie"
         },
         {
-            "id": 62,
+            "id": 37,
             "question": "Jaká je nejvyšší budova na světě?",
             "options": [
                 "Shanghai Tower",
@@ -482,7 +482,7 @@
             "category": "Architektura"
         },
         {
-            "id": 63,
+            "id": 38,
             "question": "Jaká krevní skupina je univerzální dárce?",
             "options": [
                 "A",
@@ -495,7 +495,7 @@
             "category": "Biologie"
         },
         {
-            "id": 64,
+            "id": 39,
             "question": "Který kontinent je nejmenší?",
             "options": [
                 "Austrálie",
@@ -508,7 +508,7 @@
             "category": "Geografie"
         },
         {
-            "id": 65,
+            "id": 40,
             "question": "Jaký je národní strom České republiky?",
             "options": [
                 "Javor",
@@ -519,5 +519,2215 @@
             "correctAnswer": "Lípa",
             "difficulty": "medium",
             "category": "Příroda"
-        }
+        },
+    {
+        "id": 41,
+        "question": "Kdo je zakladatelem společnosti Microsoft?",
+        "options": [
+            "Steve Jobs",
+            "Bill Gates",
+            "Elon Musk",
+            "Mark Zuckerberg"
+        ],
+        "correctAnswer": "Bill Gates",
+        "difficulty": "easy",
+        "category": "Technologie"
+    },
+    {
+        "id": 42,
+        "question": "Jak se jmenuje nejdelší řeka v České republice?",
+        "options": [
+            "Labe",
+            "Morava",
+            "Vltava",
+            "Odra"
+        ],
+        "correctAnswer": "Vltava",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 43,
+        "question": "Kolik cípů má hvězda na vlajce Izraele?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correctAnswer": "6",
+        "difficulty": "medium",
+        "category": "Obecné znalosti"
+    },
+    {
+        "id": 44,
+        "question": "Který český hokejista nosil na dresu číslo 68?",
+        "options": [
+            "Dominik Hašek",
+            "Patrik Eliáš",
+            "Jaromír Jágr",
+            "David Pastrňák"
+        ],
+        "correctAnswer": "Jaromír Jágr",
+        "difficulty": "easy",
+        "category": "Sport"
+    },
+    {
+        "id": 45,
+        "question": "Jak se latinsky nazývá zlato?",
+        "options": [
+            "Argentum",
+            "Aurum",
+            "Ferrum",
+            "Cuprum"
+        ],
+        "correctAnswer": "Aurum",
+        "difficulty": "medium",
+        "category": "Chemie"
+    },
+    {
+        "id": 46,
+        "question": "Ve kterém roce proběhla v Československu Sametová revoluce?",
+        "options": [
+            "1968",
+            "1989",
+            "1993",
+            "1945"
+        ],
+        "correctAnswer": "1989",
+        "difficulty": "easy",
+        "category": "Historie"
+    },
+    {
+        "id": 47,
+        "question": "Která země je největším producentem kávy na světě?",
+        "options": [
+            "Kolumbie",
+            "Vietnam",
+            "Brazílie",
+            "Etiopie"
+        ],
+        "correctAnswer": "Brazílie",
+        "difficulty": "medium",
+        "category": "Jídlo a pití"
+    },
+    {
+        "id": 48,
+        "question": "Jak se jmenuje fiktivní kontinent, kde se odehrává Pán prstenů?",
+        "options": [
+            "Západozemí",
+            "Středozem",
+            "Narnie",
+            "Azeroth"
+        ],
+        "correctAnswer": "Středozem",
+        "difficulty": "easy",
+        "category": "Literatura"
+    },
+    {
+        "id": 49,
+        "question": "Který fyzikální zákon říká: 'Akce vyvolává reakci'?",
+        "options": [
+            "První Newtonův zákon",
+            "Druhý Newtonův zákon",
+            "Třetí Newtonův zákon",
+            "Archimedův zákon"
+        ],
+        "correctAnswer": "Třetí Newtonův zákon",
+        "difficulty": "medium",
+        "category": "Fyzika"
+    },
+    {
+        "id": 50,
+        "question": "Které město hostilo letní olympijské hry v roce 2012?",
+        "options": [
+            "Peking",
+            "Londýn",
+            "Rio de Janeiro",
+            "Athény"
+        ],
+        "correctAnswer": "Londýn",
+        "difficulty": "medium",
+        "category": "Sport"
+    },
+    {
+        "id": 51,
+        "question": "Jaký je chemický vzorec pro kuchyňskou sůl?",
+        "options": [
+            "H2O",
+            "CO2",
+            "NaCl",
+            "KCl"
+        ],
+        "correctAnswer": "NaCl",
+        "difficulty": "medium",
+        "category": "Chemie"
+    },
+    {
+        "id": 52,
+        "question": "Kdo režíroval film 'Jurský park' (1993)?",
+        "options": [
+            "James Cameron",
+            "Steven Spielberg",
+            "George Lucas",
+            "Ridley Scott"
+        ],
+        "correctAnswer": "Steven Spielberg",
+        "difficulty": "easy",
+        "category": "Filmy"
+    },
+    {
+        "id": 53,
+        "question": "Kolik kostí má dospělý člověk v těle (přibližně)?",
+        "options": [
+            "156",
+            "206",
+            "306",
+            "406"
+        ],
+        "correctAnswer": "206",
+        "difficulty": "hard",
+        "category": "Biologie"
+    },
+    {
+        "id": 54,
+        "question": "Jak se jmenuje hlavní město Austrálie?",
+        "options": [
+            "Sydney",
+            "Melbourne",
+            "Canberra",
+            "Perth"
+        ],
+        "correctAnswer": "Canberra",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 55,
+        "question": "Který český spisovatel napsal drama R.U.R., kde se poprvé objevilo slovo 'robot'?",
+        "options": [
+            "Karel Čapek",
+            "Milan Kundera",
+            "Bohumil Hrabal",
+            "Jaroslav Hašek"
+        ],
+        "correctAnswer": "Karel Čapek",
+        "difficulty": "easy",
+        "category": "Literatura"
+    },
+    {
+        "id": 56,
+        "question": "Která kryptoměna byla vytvořena jako první?",
+        "options": [
+            "Ethereum",
+            "Litecoin",
+            "Bitcoin",
+            "Ripple"
+        ],
+        "correctAnswer": "Bitcoin",
+        "difficulty": "medium",
+        "category": "Technologie"
+    },
+    {
+        "id": 57,
+        "question": "Jak se nazývá proces, při kterém rostliny přeměňují sluneční světlo na energii?",
+        "options": [
+            "Dýchání",
+            "Fotosyntéza",
+            "Fermentace",
+            "Oxidace"
+        ],
+        "correctAnswer": "Fotosyntéza",
+        "difficulty": "easy",
+        "category": "Biologie"
+    },
+    {
+        "id": 58,
+        "question": "Ve které válce se odehrála Bitva u Slavkova?",
+        "options": [
+            "Třicetiletá válka",
+            "První světová válka",
+            "Napoleonské války",
+            "Sedmiletá válka"
+        ],
+        "correctAnswer": "Napoleonské války",
+        "difficulty": "medium",
+        "category": "Historie"
+    },
+    {
+        "id": 59,
+        "question": "Který hudební nástroj má 88 kláves?",
+        "options": [
+            "Varhany",
+            "Klavír",
+            "Akordeon",
+            "Cembalo"
+        ],
+        "correctAnswer": "Klavír",
+        "difficulty": "easy",
+        "category": "Hudba"
+    },
+    {
+        "id": 60,
+        "question": "Co měří Richterova stupnice?",
+        "options": [
+            "Rychlost větru",
+            "Intenzitu zemětřesení",
+            "Teplotu lávy",
+            "Hloubku oceánu"
+        ],
+        "correctAnswer": "Intenzitu zemětřesení",
+        "difficulty": "easy",
+        "category": "Věda"
+    },
+    {
+        "id": 61,
+        "question": "Který umělecký směr proslavil Salvador Dalí?",
+        "options": [
+            "Impresionismus",
+            "Kubismus",
+            "Surrealismus",
+            "Realismus"
+        ],
+        "correctAnswer": "Surrealismus",
+        "difficulty": "medium",
+        "category": "Umění"
+    },
+    {
+        "id": 62,
+        "question": "Jaká je nejlidnatější země světa (k roku 2023)?",
+        "options": [
+            "Čína",
+            "Indie",
+            "USA",
+            "Indonésie"
+        ],
+        "correctAnswer": "Indie",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 63,
+        "question": "Kdo namaloval strop Sixtinské kaple?",
+        "options": [
+            "Michelangelo",
+            "Raffael",
+            "Donatello",
+            "Leonardo da Vinci"
+        ],
+        "correctAnswer": "Michelangelo",
+        "difficulty": "hard",
+        "category": "Umění"
+    },
+    {
+        "id": 64,
+        "question": "Který prvek je nejlehčí?",
+        "options": [
+            "Helium",
+            "Vodík",
+            "Lithium",
+            "Kyslík"
+        ],
+        "correctAnswer": "Vodík",
+        "difficulty": "medium",
+        "category": "Chemie"
+    },
+    {
+        "id": 65,
+        "question": "Jak se jmenuje loď kapitána Jacka Sparrowa?",
+        "options": [
+            "Bludný Holanďan",
+            "Černá Perla",
+            "Jolly Roger",
+            "Královna Anna"
+        ],
+        "correctAnswer": "Černá Perla",
+        "difficulty": "easy",
+        "category": "Filmy"
+    },
+    {
+        "id": 66,
+        "question": "Kolik let trvala tzv. Stoletá válka?",
+        "options": [
+            "100",
+            "99",
+            "116",
+            "130"
+        ],
+        "correctAnswer": "116",
+        "difficulty": "hard",
+        "category": "Historie"
+    },
+    {
+        "id": 67,
+        "question": "Která společnost vyrábí telefony iPhone?",
+        "options": [
+            "Samsung",
+            "Google",
+            "Apple",
+            "Huawei"
+        ],
+        "correctAnswer": "Apple",
+        "difficulty": "easy",
+        "category": "Technologie"
+    },
+    {
+        "id": 68,
+        "question": "Co je to 'sushi'?",
+        "options": [
+            "Čínská polévka",
+            "Japonský pokrm z rýže a ryb",
+            "Thajské kari",
+            "Vietnamská rolka"
+        ],
+        "correctAnswer": "Japonský pokrm z rýže a ryb",
+        "difficulty": "easy",
+        "category": "Jídlo a pití"
+    },
+    {
+        "id": 69,
+        "question": "Který plyn se používá v balóncích, aby létaly?",
+        "options": [
+            "Kyslík",
+            "Dusík",
+            "Helium",
+            "Argon"
+        ],
+        "correctAnswer": "Helium",
+        "difficulty": "easy",
+        "category": "Fyzika"
+    },
+    {
+        "id": 70,
+        "question": "Kdo je autorem teorie relativity?",
+        "options": [
+            "Isaac Newton",
+            "Albert Einstein",
+            "Niels Bohr",
+            "Stephen Hawking"
+        ],
+        "correctAnswer": "Albert Einstein",
+        "difficulty": "medium",
+        "category": "Fyzika"
+    },
+    {
+        "id": 71,
+        "question": "Jak se jmenuje nejbližší hvězda k Zemi?",
+        "options": [
+            "Proxima Centauri",
+            "Slunce",
+            "Sirius",
+            "Polárka"
+        ],
+        "correctAnswer": "Slunce",
+        "difficulty": "easy",
+        "category": "Astronomie"
+    },
+    {
+        "id": 72,
+        "question": "Který český král byl zván 'Otec vlasti'?",
+        "options": [
+            "Václav IV.",
+            "Přemysl Otakar II.",
+            "Karel IV.",
+            "Jiří z Poděbrad"
+        ],
+        "correctAnswer": "Karel IV.",
+        "difficulty": "easy",
+        "category": "Historie"
+    },
+    {
+        "id": 73,
+        "question": "Kolik zubů má obvykle dospělý člověk (včetně zubů moudrosti)?",
+        "options": [
+            "28",
+            "30",
+            "32",
+            "34"
+        ],
+        "correctAnswer": "32",
+        "difficulty": "medium",
+        "category": "Biologie"
+    },
+    {
+        "id": 74,
+        "question": "Jaká je hlavní ingredience pokrmu Guacamole?",
+        "options": [
+            "Rajče",
+            "Avokádo",
+            "Paprika",
+            "Cizrna"
+        ],
+        "correctAnswer": "Avokádo",
+        "difficulty": "easy",
+        "category": "Jídlo a pití"
+    },
+    {
+        "id": 75,
+        "question": "Ve kterém roce získali čeští hokejisté zlato na olympiádě v Naganu?",
+        "options": [
+            "1994",
+            "1998",
+            "2002",
+            "1990"
+        ],
+        "correctAnswer": "1998",
+        "difficulty": "easy",
+        "category": "Sport"
+    },
+    {
+        "id": 76,
+        "question": "Kdo je autorem knihy 'Malý princ'?",
+        "options": [
+            "Antoine de Saint-Exupéry",
+            "Jules Verne",
+            "Victor Hugo",
+            "Alexandre Dumas"
+        ],
+        "correctAnswer": "Antoine de Saint-Exupéry",
+        "difficulty": "medium",
+        "category": "Literatura"
+    },
+    {
+        "id": 77,
+        "question": "Jak se jmenuje měna používaná ve Velké Británii?",
+        "options": [
+            "Euro",
+            "Dolar",
+            "Libra",
+            "Frank"
+        ],
+        "correctAnswer": "Libra",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 78,
+        "question": "Co znamená zkratka 'www' v internetových adresách?",
+        "options": [
+            "World Wide Web",
+            "World Web Wide",
+            "Web Wide World",
+            "Wide World Web"
+        ],
+        "correctAnswer": "World Wide Web",
+        "difficulty": "medium",
+        "category": "Technologie"
+    },
+    {
+        "id": 79,
+        "question": "Který pták je symbolem moudrosti?",
+        "options": [
+            "Orel",
+            "Sova",
+            "Holub",
+            "Havran"
+        ],
+        "correctAnswer": "Sova",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 80,
+        "question": "Kdo režíroval film 'Pulp Fiction'?",
+        "options": [
+            "Martin Scorsese",
+            "Quentin Tarantino",
+            "Stanley Kubrick",
+            "Christopher Nolan"
+        ],
+        "correctAnswer": "Quentin Tarantino",
+        "difficulty": "medium",
+        "category": "Filmy"
+    },
+    {
+        "id": 81,
+        "question": "Jaká je přibližná hodnota čísla Pí?",
+        "options": [
+            "3,14",
+            "2,14",
+            "3,41",
+            "3,12"
+        ],
+        "correctAnswer": "3,14",
+        "difficulty": "medium",
+        "category": "Matematika"
+    },
+    {
+        "id": 82,
+        "question": "Který český reformátor byl upálen v Kostnici roku 1415?",
+        "options": [
+            "Jan Žižka",
+            "Jan Hus",
+            "Jan Amos Komenský",
+            "Jeroným Pražský"
+        ],
+        "correctAnswer": "Jan Hus",
+        "difficulty": "easy",
+        "category": "Historie"
+    },
+    {
+        "id": 83,
+        "question": "Jak se jmenuje bratr Maria z videohier Nintendo?",
+        "options": [
+            "Wario",
+            "Luigi",
+            "Yoshi",
+            "Toad"
+        ],
+        "correctAnswer": "Luigi",
+        "difficulty": "easy",
+        "category": "Zábava"
+    },
+    {
+        "id": 84,
+        "question": "Který stát je rozlohou největší na světě?",
+        "options": [
+            "Čína",
+            "USA",
+            "Kanada",
+            "Rusko"
+        ],
+        "correctAnswer": "Rusko",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 85,
+        "question": "Jak se nazývá strach z pavouků?",
+        "options": [
+            "Klaustrofobie",
+            "Arachnofobie",
+            "Agorafobie",
+            "Xenofobie"
+        ],
+        "correctAnswer": "Arachnofobie",
+        "difficulty": "medium",
+        "category": "Psychologie"
+    },
+    {
+        "id": 86,
+        "question": "Který prvek je nezbytný pro dýchání člověka?",
+        "options": [
+            "Dusík",
+            "Kyslík",
+            "Helium",
+            "Uhlík"
+        ],
+        "correctAnswer": "Kyslík",
+        "difficulty": "easy",
+        "category": "Biologie"
+    },
+    {
+        "id": 87,
+        "question": "Jak se jmenuje hlavní město Slovenska?",
+        "options": [
+            "Košice",
+            "Bratislava",
+            "Nitra",
+            "Žilina"
+        ],
+        "correctAnswer": "Bratislava",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 88,
+        "question": "Kdo je zakladatelem sociální sítě Facebook?",
+        "options": [
+            "Jeff Bezos",
+            "Elon Musk",
+            "Mark Zuckerberg",
+            "Tim Cook"
+        ],
+        "correctAnswer": "Mark Zuckerberg",
+        "difficulty": "easy",
+        "category": "Technologie"
+    },
+    {
+        "id": 89,
+        "question": "Který hudebník byl známý jako 'Král popu'?",
+        "options": [
+            "Elvis Presley",
+            "Michael Jackson",
+            "Prince",
+            "Freddie Mercury"
+        ],
+        "correctAnswer": "Michael Jackson",
+        "difficulty": "easy",
+        "category": "Hudba"
+    },
+    {
+        "id": 90,
+        "question": "Kolik noh má pavouk?",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+        ],
+        "correctAnswer": "8",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 91,
+        "question": "Která loď se potopila v roce 1912 po srážce s ledovcem?",
+        "options": [
+            "Titanic",
+            "Olympic",
+            "Britannic",
+            "Lusitania"
+        ],
+        "correctAnswer": "Titanic",
+        "difficulty": "easy",
+        "category": "Historie"
+    },
+    {
+        "id": 92,
+        "question": "Jaký je největší orgán lidského těla?",
+        "options": [
+            "Játra",
+            "Mozek",
+            "Kůže",
+            "Plíce"
+        ],
+        "correctAnswer": "Kůže",
+        "difficulty": "hard",
+        "category": "Biologie"
+    },
+    {
+        "id": 93,
+        "question": "Kdo napsal knihu 'Babička'?",
+        "options": [
+            "Karel Jaromír Erben",
+            "Božena Němcová",
+            "Jan Neruda",
+            "Alois Jirásek"
+        ],
+        "correctAnswer": "Božena Němcová",
+        "difficulty": "easy",
+        "category": "Literatura"
+    },
+    {
+        "id": 94,
+        "question": "Ve kterém sportu se používá puk?",
+        "options": [
+            "Florbal",
+            "Lední hokej",
+            "Pozemní hokej",
+            "Curling"
+        ],
+        "correctAnswer": "Lední hokej",
+        "difficulty": "easy",
+        "category": "Sport"
+    },
+    {
+        "id": 95,
+        "question": "Který severský bůh vládne hromu a blesku?",
+        "options": [
+            "Odin",
+            "Loki",
+            "Thor",
+            "Freya"
+        ],
+        "correctAnswer": "Thor",
+        "difficulty": "medium",
+        "category": "Mytologie"
+    },
+    {
+        "id": 96,
+        "question": "Co měří teploměr?",
+        "options": [
+            "Tlak",
+            "Vlhkost",
+            "Teplotu",
+            "Rychlost"
+        ],
+        "correctAnswer": "Teplotu",
+        "difficulty": "easy",
+        "category": "Fyzika"
+    },
+    {
+        "id": 97,
+        "question": "Které město je hlavním městem Spojených států amerických?",
+        "options": [
+            "New York",
+            "Los Angeles",
+            "Washington D.C.",
+            "Chicago"
+        ],
+        "correctAnswer": "Washington D.C.",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 98,
+        "question": "Jaké číslo nosí agent James Bond?",
+        "options": [
+            "001",
+            "007",
+            "700",
+            "000"
+        ],
+        "correctAnswer": "007",
+        "difficulty": "easy",
+        "category": "Filmy"
+    },
+    {
+        "id": 99,
+        "question": "Která planeta je známá jako 'Rudá planeta'?",
+        "options": [
+            "Venuše",
+            "Mars",
+            "Jupiter",
+            "Saturn"
+        ],
+        "correctAnswer": "Mars",
+        "difficulty": "easy",
+        "category": "Astronomie"
+    },
+    {
+        "id": 100,
+        "question": "Jak se jmenuje nejvyšší hora České republiky?",
+        "options": [
+            "Praděd",
+            "Lysá hora",
+            "Sněžka",
+            "Říp"
+        ],
+        "correctAnswer": "Sněžka",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 101,
+        "question": "Ve kterém roce byla vydána Zlatá bula sicilská?",
+        "options": [
+            "1212",
+            "1348",
+            "1415",
+            "1620"
+        ],
+        "correctAnswer": "1212",
+        "difficulty": "hard",
+        "category": "Historie"
+    },
+    {
+        "id": 102,
+        "question": "Jak se jmenuje hlavní město Brazílie?",
+        "options": [
+            "Rio de Janeiro",
+            "São Paulo",
+            "Brasília",
+            "Salvador"
+        ],
+        "correctAnswer": "Brasília",
+        "difficulty": "hard",
+        "category": "Geografie"
+    },
+    {
+        "id": 103,
+        "question": "Kdo byl prvním českým nositelem Nobelovy ceny?",
+        "options": [
+            "Jaroslav Seifert",
+            "Jaroslav Heyrovský",
+            "Karel Čapek",
+            "Václav Havel"
+        ],
+        "correctAnswer": "Jaroslav Heyrovský",
+        "difficulty": "hard",
+        "category": "Věda"
+    },
+    {
+        "id": 104,
+        "question": "Kolik párů chromozomů má zdravá lidská buňka?",
+        "options": [
+            "21",
+            "23",
+            "46",
+            "48"
+        ],
+        "correctAnswer": "23",
+        "difficulty": "hard",
+        "category": "Biologie"
+    },
+    {
+        "id": 105,
+        "question": "Který malíř je autorem obrazu 'Výkřik'?",
+        "options": [
+            "Edvard Munch",
+            "Gustav Klimt",
+            "Vincent van Gogh",
+            "Claude Monet"
+        ],
+        "correctAnswer": "Edvard Munch",
+        "difficulty": "hard",
+        "category": "Umění"
+    },
+    {
+        "id": 106,
+        "question": "Jaká je rychlost světla ve vakuu (přibližně)?",
+        "options": [
+            "150 000 km/s",
+            "300 000 km/s",
+            "1 000 000 km/s",
+            "330 m/s"
+        ],
+        "correctAnswer": "300 000 km/s",
+        "difficulty": "hard",
+        "category": "Fyzika"
+    },
+    {
+        "id": 107,
+        "question": "Kdo napsal 'Božskou komedii'?",
+        "options": [
+            "Giovanni Boccaccio",
+            "Francesco Petrarca",
+            "Dante Alighieri",
+            "William Shakespeare"
+        ],
+        "correctAnswer": "Dante Alighieri",
+        "difficulty": "hard",
+        "category": "Literatura"
+    },
+    {
+        "id": 108,
+        "question": "Jak se jmenuje nejhlubší místo na Zemi?",
+        "options": [
+            "Mariánský příkop",
+            "Příkop Tonga",
+            "Sundský příkop",
+            "Portorický příkop"
+        ],
+        "correctAnswer": "Mariánský příkop",
+        "difficulty": "hard",
+        "category": "Geografie"
+    },
+    {
+        "id": 109,
+        "question": "Který chemický prvek má značku 'W'?",
+        "options": [
+            "Wolfram",
+            "Vápník",
+            "Vanad",
+            "Vodík"
+        ],
+        "correctAnswer": "Wolfram",
+        "difficulty": "hard",
+        "category": "Chemie"
+    },
+    {
+        "id": 110,
+        "question": "Kdy začala první světová válka?",
+        "options": [
+            "1912",
+            "1914",
+            "1918",
+            "1939"
+        ],
+        "correctAnswer": "1914",
+        "difficulty": "hard",
+        "category": "Historie"
+    },
+    {
+        "id": 111,
+        "question": "Jak se jmenuje největší měsíc planety Saturn?",
+        "options": [
+            "Titan",
+            "Europa",
+            "Ganymedes",
+            "Io"
+        ],
+        "correctAnswer": "Titan",
+        "difficulty": "hard",
+        "category": "Astronomie"
+    },
+    {
+        "id": 112,
+        "question": "Kdo je považován za 'otce medicíny'?",
+        "options": [
+            "Sokrates",
+            "Hippokratés",
+            "Aristoteles",
+            "Galén"
+        ],
+        "correctAnswer": "Hippokratés",
+        "difficulty": "hard",
+        "category": "Historie"
+    },
+    {
+        "id": 113,
+        "question": "Jakou barvu má krev chobotnice?",
+        "options": [
+            "Červenou",
+            "Modrou",
+            "Zelenou",
+            "Bezbarvou"
+        ],
+        "correctAnswer": "Modrou",
+        "difficulty": "hard",
+        "category": "Biologie"
+    },
+    {
+        "id": 114,
+        "question": "Ve kterém městě sídlí Evropská centrální banka?",
+        "options": [
+            "Brusel",
+            "Štrasburk",
+            "Frankfurt nad Mohanem",
+            "Curych"
+        ],
+        "correctAnswer": "Frankfurt nad Mohanem",
+        "difficulty": "hard",
+        "category": "Ekonomie"
+    },
+    {
+        "id": 115,
+        "question": "Kolik je odmocnina z čísla 225?",
+        "options": [
+            "12",
+            "13",
+            "15",
+            "25"
+        ],
+        "correctAnswer": "15",
+        "difficulty": "hard",
+        "category": "Matematika"
+    },
+    {
+        "id": 116,
+        "question": "Který film získal v roce 2003 celkem 11 Oscarů?",
+        "options": [
+            "Titanic",
+            "Pán prstenů: Návrat krále",
+            "Ben Hur",
+            "Gladiátor"
+        ],
+        "correctAnswer": "Pán prstenů: Návrat krále",
+        "difficulty": "hard",
+        "category": "Filmy"
+    },
+    {
+        "id": 117,
+        "question": "Jaká je nejtvrdší tkáň v lidském těle?",
+        "options": [
+            "Stehenní kost",
+            "Zubní sklovina",
+            "Nehet",
+            "Lebka"
+        ],
+        "correctAnswer": "Zubní sklovina",
+        "difficulty": "hard",
+        "category": "Biologie"
+    },
+    {
+        "id": 118,
+        "question": "Kdo složil hudební cyklus 'Čtvero ročních dob'?",
+        "options": [
+            "Antonio Vivaldi",
+            "Johann Sebastian Bach",
+            "Giuseppe Verdi",
+            "Wolfgang Amadeus Mozart"
+        ],
+        "correctAnswer": "Antonio Vivaldi",
+        "difficulty": "hard",
+        "category": "Hudba"
+    },
+    {
+        "id": 119,
+        "question": "Jaký je nejrozšířenější prvek ve vesmíru?",
+        "options": [
+            "Kyslík",
+            "Uhlík",
+            "Vodík",
+            "Helium"
+        ],
+        "correctAnswer": "Vodík",
+        "difficulty": "hard",
+        "category": "Fyzika"
+    },
+    {
+        "id": 120,
+        "question": "Které z následujících měst leží na dvou kontinentech?",
+        "options": [
+            "Káhira",
+            "Istanbul",
+            "Moskva",
+            "Dubaj"
+        ],
+        "correctAnswer": "Istanbul",
+        "difficulty": "hard",
+        "category": "Geografie"
+    },
+    {
+        "id": 121,
+        "question": "Kdo byl první ženou ve vesmíru?",
+        "options": [
+            "Valentina Těreškovová",
+            "Sally Ride",
+            "Jurij Gagarin",
+            "Laika"
+        ],
+        "correctAnswer": "Valentina Těreškovová",
+        "difficulty": "hard",
+        "category": "Historie"
+    },
+    {
+        "id": 122,
+        "question": "Jak dlouhá je maratonská trať (přesně)?",
+        "options": [
+            "40 km",
+            "42,195 km",
+            "45 km",
+            "50 km"
+        ],
+        "correctAnswer": "42,195 km",
+        "difficulty": "hard",
+        "category": "Sport"
+    },
+    {
+        "id": 123,
+        "question": "Který architekt navrhl Tančící dům v Praze (spolu s Vlado Milunićem)?",
+        "options": [
+            "Zaha Hadid",
+            "Frank Gehry",
+            "Norman Foster",
+            "Le Corbusier"
+        ],
+        "correctAnswer": "Frank Gehry",
+        "difficulty": "hard",
+        "category": "Architektura"
+    },
+    {
+        "id": 124,
+        "question": "Jak se jmenuje programovací jazyk, který vytvořil Bjarne Stroustrup?",
+        "options": [
+            "Java",
+            "Python",
+            "C++",
+            "Pascal"
+        ],
+        "correctAnswer": "C++",
+        "difficulty": "hard",
+        "category": "Technologie"
+    },
+    {
+        "id": 125,
+        "question": "Ve kterém roce došlo k bitvě na Bílé hoře?",
+        "options": [
+            "1618",
+            "1620",
+            "1648",
+            "1526"
+        ],
+        "correctAnswer": "1620",
+        "difficulty": "hard",
+        "category": "Historie"
+    },
+    {
+        "id": 126,
+        "question": "Který ostrov je největší na světě?",
+        "options": [
+            "Madagaskar",
+            "Grónsko",
+            "Nová Guinea",
+            "Borneo"
+        ],
+        "correctAnswer": "Grónsko",
+        "difficulty": "hard",
+        "category": "Geografie"
+    },
+    {
+        "id": 127,
+        "question": "Kdo je autorem obrazu 'Noční hlídka'?",
+        "options": [
+            "Rembrandt",
+            "Vermeer",
+            "Rubens",
+            "Caravaggio"
+        ],
+        "correctAnswer": "Rembrandt",
+        "difficulty": "hard",
+        "category": "Umění"
+    },
+    {
+        "id": 128,
+        "question": "Jaký plyn se používá v žárovkách, aby vlákno neshořelo?",
+        "options": [
+            "Kyslík",
+            "Argon",
+            "Vodík",
+            "Chlor"
+        ],
+        "correctAnswer": "Argon",
+        "difficulty": "hard",
+        "category": "Fyzika"
+    },
+    {
+        "id": 129,
+        "question": "Která země používá měnu 'zlotý'?",
+        "options": [
+            "Maďarsko",
+            "Polsko",
+            "Bulharsko",
+            "Rumunsko"
+        ],
+        "correctAnswer": "Polsko",
+        "difficulty": "hard",
+        "category": "Geografie"
+    },
+    {
+        "id": 130,
+        "question": "Co zkoumá vědní obor 'mykologie'?",
+        "options": [
+            "Mechy",
+            "Houby",
+            "Hmyz",
+            "Minerály"
+        ],
+        "correctAnswer": "Houby",
+        "difficulty": "hard",
+        "category": "Biologie"
+    },
+    {
+        "id": 131,
+        "question": "Jak se jmenuje mládě psa?",
+        "options": [
+            "Kotě",
+            "Štěně",
+            "Jehně",
+            "Tele"
+        ],
+        "correctAnswer": "Štěně",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 132,
+        "question": "Které roční období je nejchladnější?",
+        "options": [
+            "Jaro",
+            "Léto",
+            "Podzim",
+            "Zima"
+        ],
+        "correctAnswer": "Zima",
+        "difficulty": "easy",
+        "category": "Obecné znalosti"
+    },
+    {
+        "id": 133,
+        "question": "Jakou barvu má tráva?",
+        "options": [
+            "Modrou",
+            "Červenou",
+            "Zelenou",
+            "Fialovou"
+        ],
+        "correctAnswer": "Zelenou",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 134,
+        "question": "Kdo snědl Karkulku?",
+        "options": [
+            "Medvěd",
+            "Vlk",
+            "Liška",
+            "Lovec"
+        ],
+        "correctAnswer": "Vlk",
+        "difficulty": "easy",
+        "category": "Pohádky"
+    },
+    {
+        "id": 135,
+        "question": "Čím se platí v České republice?",
+        "options": [
+            "Euro",
+            "Dolar",
+            "Koruna česká",
+            "Libra"
+        ],
+        "correctAnswer": "Koruna česká",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 136,
+        "question": "Které zvíře dává mléko?",
+        "options": [
+            "Slepice",
+            "Kráva",
+            "Ryba",
+            "Žába"
+        ],
+        "correctAnswer": "Kráva",
+        "difficulty": "easy",
+        "category": "Zvířata"
+    },
+    {
+        "id": 137,
+        "question": "Kolik dní má jeden týden?",
+        "options": [
+            "5",
+            "7",
+            "10",
+            "12"
+        ],
+        "correctAnswer": "7",
+        "difficulty": "easy",
+        "category": "Obecné znalosti"
+    },
+    {
+        "id": 138,
+        "question": "Co používáme k psaní na papír?",
+        "options": [
+            "Lžíci",
+            "Propisku",
+            "Hřeben",
+            "Klíč"
+        ],
+        "correctAnswer": "Propisku",
+        "difficulty": "easy",
+        "category": "Škola"
+    },
+    {
+        "id": 139,
+        "question": "Který dopravní prostředek jezdí po kolejích?",
+        "options": [
+            "Autobus",
+            "Vlak",
+            "Letadlo",
+            "Loď"
+        ],
+        "correctAnswer": "Vlak",
+        "difficulty": "easy",
+        "category": "Technologie"
+    },
+    {
+        "id": 140,
+        "question": "Jak se jmenuje žluté zahnuté ovoce?",
+        "options": [
+            "Jablko",
+            "Banán",
+            "Pomeranč",
+            "Hrozny"
+        ],
+        "correctAnswer": "Banán",
+        "difficulty": "easy",
+        "category": "Jídlo a pití"
+    },
+    {
+        "id": 141,
+        "question": "Co nosíme na nohou?",
+        "options": [
+            "Rukavice",
+            "Boty",
+            "Čepici",
+            "Šálu"
+        ],
+        "correctAnswer": "Boty",
+        "difficulty": "easy",
+        "category": "Móda"
+    },
+    {
+        "id": 142,
+        "question": "Kde žijí ryby?",
+        "options": [
+            "Na stromě",
+            "V noře",
+            "Ve vodě",
+            "V hnízdě"
+        ],
+        "correctAnswer": "Ve vodě",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 143,
+        "question": "Jak se jmenuje partnerka Mickey Mouse?",
+        "options": [
+            "Daisy",
+            "Minnie",
+            "Popelka",
+            "Locika"
+        ],
+        "correctAnswer": "Minnie",
+        "difficulty": "easy",
+        "category": "Filmy"
+    },
+    {
+        "id": 144,
+        "question": "Kolik je 5 plus 5?",
+        "options": [
+            "8",
+            "10",
+            "15",
+            "20"
+        ],
+        "correctAnswer": "10",
+        "difficulty": "easy",
+        "category": "Matematika"
+    },
+    {
+        "id": 145,
+        "question": "Co pečou pekaři?",
+        "options": [
+            "Maso",
+            "Chleba",
+            "Boty",
+            "Cihly"
+        ],
+        "correctAnswer": "Chleba",
+        "difficulty": "easy",
+        "category": "Práce"
+    },
+    {
+        "id": 146,
+        "question": "Jakou barvu má sníh?",
+        "options": [
+            "Černou",
+            "Bílou",
+            "Zelenou",
+            "Modrou"
+        ],
+        "correctAnswer": "Bílou",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 147,
+        "question": "Který sport se hraje s pukem?",
+        "options": [
+            "Fotbal",
+            "Tenis",
+            "Hokej",
+            "Basketbal"
+        ],
+        "correctAnswer": "Hokej",
+        "difficulty": "easy",
+        "category": "Sport"
+    },
+    {
+        "id": 148,
+        "question": "Co ztratila Popelka na plese?",
+        "options": [
+            "Kabelku",
+            "Střevíček",
+            "Korunku",
+            "Prstýnek"
+        ],
+        "correctAnswer": "Střevíček",
+        "difficulty": "easy",
+        "category": "Pohádky"
+    },
+    {
+        "id": 149,
+        "question": "Čím se živí včely?",
+        "options": [
+            "Masem",
+            "Nelek",
+            "Nektarem z květů",
+            "Trávou"
+        ],
+        "correctAnswer": "Nektarem z květů",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 150,
+        "question": "Který měsíc je obvykle spojen s Vánocemi?",
+        "options": [
+            "Leden",
+            "Červenec",
+            "Září",
+            "Prosinec"
+        ],
+        "correctAnswer": "Prosinec",
+        "difficulty": "easy",
+        "category": "Svátky"
+    },
+    {
+        "id": 151,
+        "question": "Jaké zvíře má dlouhý chobot?",
+        "options": [
+            "Žirafa",
+            "Slon",
+            "Hroch",
+            "Lev"
+        ],
+        "correctAnswer": "Slon",
+        "difficulty": "easy",
+        "category": "Zvířata"
+    },
+    {
+        "id": 152,
+        "question": "Co děláme očima?",
+        "options": [
+            "Slyšíme",
+            "Jíme",
+            "Vidíme",
+            "Chodíme"
+        ],
+        "correctAnswer": "Vidíme",
+        "difficulty": "easy",
+        "category": "Tělo"
+    },
+    {
+        "id": 153,
+        "question": "Který nápoj se získává od krávy?",
+        "options": [
+            "Džus",
+            "Mléko",
+            "Čaj",
+            "Káva"
+        ],
+        "correctAnswer": "Mléko",
+        "difficulty": "easy",
+        "category": "Jídlo a pití"
+    },
+    {
+        "id": 154,
+        "question": "Jak se jmenuje postavička z kostiček ve hře Minecraft?",
+        "options": [
+            "Steve",
+            "Mario",
+            "Sonic",
+            "Pikachu"
+        ],
+        "correctAnswer": "Steve",
+        "difficulty": "easy",
+        "category": "Hry"
+    },
+    {
+        "id": 155,
+        "question": "Kde bydlí král?",
+        "options": [
+            "V jeskyni",
+            "V paneláku",
+            "Na zámku",
+            "Ve stanu"
+        ],
+        "correctAnswer": "Na zámku",
+        "difficulty": "easy",
+        "category": "Pohádky"
+    },
+    {
+        "id": 156,
+        "question": "Co potřebují rostliny k životu?",
+        "options": [
+            "Kolu",
+            "Vodu a světlo",
+            "Tmu",
+            "Oheň"
+        ],
+        "correctAnswer": "Vodu a světlo",
+        "difficulty": "easy",
+        "category": "Příroda"
+    },
+    {
+        "id": 157,
+        "question": "Který den následuje po pátku?",
+        "options": [
+            "Středa",
+            "Neděle",
+            "Sobota",
+            "Pondělí"
+        ],
+        "correctAnswer": "Sobota",
+        "difficulty": "easy",
+        "category": "Obecné znalosti"
+    },
+    {
+        "id": 158,
+        "question": "Jak se jmenuje hlavní město Francie?",
+        "options": [
+            "Berlín",
+            "Paříž",
+            "Madrid",
+            "Řím"
+        ],
+        "correctAnswer": "Paříž",
+        "difficulty": "easy",
+        "category": "Geografie"
+    },
+    {
+        "id": 159,
+        "question": "Čím si čistíme zuby?",
+        "options": [
+            "Hřebenem",
+            "Kartáčkem",
+            "Mýdlem",
+            "Houbičkou"
+        ],
+        "correctAnswer": "Kartáčkem",
+        "difficulty": "easy",
+        "category": "Hygiena"
+    },
+    {
+        "id": 160,
+        "question": "Jaké zvíře mňouká?",
+        "options": [
+            "Pes",
+            "Kočka",
+            "Kůň",
+            "Křeček"
+        ],
+        "correctAnswer": "Kočka",
+        "difficulty": "easy",
+        "category": "Zvířata"
+    },
+    {
+        "id": 161,
+        "question": "Které město je hlavním městem Španělska?",
+        "options": [
+            "Barcelona",
+            "Madrid",
+            "Sevilla",
+            "Valencia"
+        ],
+        "correctAnswer": "Madrid",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 162,
+        "question": "Kdo namaloval obraz Hvězdná noc?",
+        "options": [
+            "Claude Monet",
+            "Vincent van Gogh",
+            "Pablo Picasso",
+            "Salvador Dalí"
+        ],
+        "correctAnswer": "Vincent van Gogh",
+        "difficulty": "medium",
+        "category": "Umění"
+    },
+    {
+        "id": 163,
+        "question": "Jak se jmenuje nejvyšší hora Afriky?",
+        "options": [
+            "Mount Everest",
+            "Mont Blanc",
+            "Kilimandžáro",
+            "K2"
+        ],
+        "correctAnswer": "Kilimandžáro",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 164,
+        "question": "Kolik hráčů má volejbalový tým na hřišti?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "11"
+        ],
+        "correctAnswer": "6",
+        "difficulty": "medium",
+        "category": "Sport"
+    },
+    {
+        "id": 165,
+        "question": "Který prvek má chemickou značku 'O'?",
+        "options": [
+            "Olovo",
+            "Kyslík",
+            "Osmium",
+            "Zlato"
+        ],
+        "correctAnswer": "Kyslík",
+        "difficulty": "medium",
+        "category": "Chemie"
+    },
+    {
+        "id": 166,
+        "question": "Ve kterém roce byla založena Univerzita Karlova?",
+        "options": [
+            "1212",
+            "1348",
+            "1415",
+            "1620"
+        ],
+        "correctAnswer": "1348",
+        "difficulty": "medium",
+        "category": "Historie"
+    },
+    {
+        "id": 167,
+        "question": "Jak se jmenuje zakladatel automobilky Tesla?",
+        "options": [
+            "Jeff Bezos",
+            "Bill Gates",
+            "Elon Musk",
+            "Henry Ford"
+        ],
+        "correctAnswer": "Elon Musk",
+        "difficulty": "medium",
+        "category": "Technologie"
+    },
+    {
+        "id": 168,
+        "question": "Které zvíře je symbolem Světového fondu na ochranu přírody (WWF)?",
+        "options": [
+            "Lev",
+            "Panda velká",
+            "Tygr",
+            "Slon"
+        ],
+        "correctAnswer": "Panda velká",
+        "difficulty": "medium",
+        "category": "Příroda"
+    },
+    {
+        "id": 169,
+        "question": "Jak se jmenuje bůh moří v řecké mytologii?",
+        "options": [
+            "Zeus",
+            "Hádes",
+            "Poseidon",
+            "Ares"
+        ],
+        "correctAnswer": "Poseidon",
+        "difficulty": "medium",
+        "category": "Mytologie"
+    },
+    {
+        "id": 170,
+        "question": "Která země je známá jako 'země vycházejícího slunce'?",
+        "options": [
+            "Čína",
+            "Japonsko",
+            "Korea",
+            "Thajsko"
+        ],
+        "correctAnswer": "Japonsko",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 171,
+        "question": "Kdo napsal knihu Hobit?",
+        "options": [
+            "J.K. Rowlingová",
+            "J.R.R. Tolkien",
+            "George R.R. Martin",
+            "C.S. Lewis"
+        ],
+        "correctAnswer": "J.R.R. Tolkien",
+        "difficulty": "medium",
+        "category": "Literatura"
+    },
+    {
+        "id": 172,
+        "question": "Jak se jmenuje největší ostrov ve Středozemním moři?",
+        "options": [
+            "Korsika",
+            "Sardinie",
+            "Sicílie",
+            "Kréta"
+        ],
+        "correctAnswer": "Sicílie",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 173,
+        "question": "Která planeta má prstence?",
+        "options": [
+            "Mars",
+            "Venuše",
+            "Saturn",
+            "Merkur"
+        ],
+        "correctAnswer": "Saturn",
+        "difficulty": "medium",
+        "category": "Astronomie"
+    },
+    {
+        "id": 174,
+        "question": "Kolik je 7 krát 8?",
+        "options": [
+            "48",
+            "54",
+            "56",
+            "64"
+        ],
+        "correctAnswer": "56",
+        "difficulty": "medium",
+        "category": "Matematika"
+    },
+    {
+        "id": 175,
+        "question": "Kdo je autorem opery Prodaná nevěsta?",
+        "options": [
+            "Antonín Dvořák",
+            "Bedřich Smetana",
+            "Leoš Janáček",
+            "Bohuslav Martinů"
+        ],
+        "correctAnswer": "Bedřich Smetana",
+        "difficulty": "medium",
+        "category": "Hudba"
+    },
+    {
+        "id": 176,
+        "question": "Který vitamín získáváme ze slunce?",
+        "options": [
+            "Vitamín A",
+            "Vitamín B",
+            "Vitamín C",
+            "Vitamín D"
+        ],
+        "correctAnswer": "Vitamín D",
+        "difficulty": "medium",
+        "category": "Biologie"
+    },
+    {
+        "id": 177,
+        "question": "Jak se jmenuje hlavní město Itálie?",
+        "options": [
+            "Milán",
+            "Benátky",
+            "Řím",
+            "Neapol"
+        ],
+        "correctAnswer": "Řím",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 178,
+        "question": "Který český hrad je nejnavštěvovanější?",
+        "options": [
+            "Karlštejn",
+            "Pražský hrad",
+            "Křivoklát",
+            "Hluboká nad Vltavou"
+        ],
+        "correctAnswer": "Pražský hrad",
+        "difficulty": "medium",
+        "category": "Kultura"
+    },
+    {
+        "id": 179,
+        "question": "Který plyn vydechují lidé?",
+        "options": [
+            "Kyslík",
+            "Dusík",
+            "Oxid uhličitý",
+            "Helium"
+        ],
+        "correctAnswer": "Oxid uhličitý",
+        "difficulty": "medium",
+        "category": "Biologie"
+    },
+    {
+        "id": 180,
+        "question": "Ve kterém roce přistál člověk poprvé na Měsíci?",
+        "options": [
+            "1959",
+            "1969",
+            "1975",
+            "1981"
+        ],
+        "correctAnswer": "1969",
+        "difficulty": "medium",
+        "category": "Historie"
+    },
+    {
+        "id": 181,
+        "question": "Jak se jmenuje nejdelší řeka světa?",
+        "options": [
+            "Nil",
+            "Amazonka",
+            "Jang-c’-ťiang",
+            "Mississippi"
+        ],
+        "correctAnswer": "Amazonka",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 182,
+        "question": "Který sport se hraje na Wimbledonu?",
+        "options": [
+            "Golf",
+            "Kriket",
+            "Tenis",
+            "Rugby"
+        ],
+        "correctAnswer": "Tenis",
+        "difficulty": "medium",
+        "category": "Sport"
+    },
+    {
+        "id": 183,
+        "question": "Jak se jmenuje měna v Japonsku?",
+        "options": [
+            "Jen",
+            "Won",
+            "Jüan",
+            "Dolar"
+        ],
+        "correctAnswer": "Jen",
+        "difficulty": "medium",
+        "category": "Ekonomie"
+    },
+    {
+        "id": 184,
+        "question": "Který český vědec vynalezl kontaktní čočky?",
+        "options": [
+            "Otto Wichterle",
+            "Jaroslav Heyrovský",
+            "František Křižík",
+            "Prokop Diviš"
+        ],
+        "correctAnswer": "Otto Wichterle",
+        "difficulty": "medium",
+        "category": "Věda"
+    },
+    {
+        "id": 185,
+        "question": "Kolik je vteřin v jedné hodině?",
+        "options": [
+            "60",
+            "360",
+            "3600",
+            "6000"
+        ],
+        "correctAnswer": "3600",
+        "difficulty": "medium",
+        "category": "Matematika"
+    },
+    {
+        "id": 186,
+        "question": "Který herec ztvárnil Iron Mana ve filmech od Marvelu?",
+        "options": [
+            "Chris Evans",
+            "Robert Downey Jr.",
+            "Chris Hemsworth",
+            "Tom Holland"
+        ],
+        "correctAnswer": "Robert Downey Jr.",
+        "difficulty": "medium",
+        "category": "Filmy"
+    },
+    {
+        "id": 187,
+        "question": "Jak se nazývá proces, kdy se housenka mění v motýla?",
+        "options": [
+            "Evoluce",
+            "Metamorfóza",
+            "Hibernace",
+            "Mutace"
+        ],
+        "correctAnswer": "Metamorfóza",
+        "difficulty": "medium",
+        "category": "Biologie"
+    },
+    {
+        "id": 188,
+        "question": "Které moře omývá břehy Chorvatska?",
+        "options": [
+            "Jaderské moře",
+            "Egejské moře",
+            "Tyrhénské moře",
+            "Jónské moře"
+        ],
+        "correctAnswer": "Jaderské moře",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 189,
+        "question": "Kdo je autorem sochy David?",
+        "options": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Donatello",
+            "Raffael"
+        ],
+        "correctAnswer": "Michelangelo",
+        "difficulty": "medium",
+        "category": "Umění"
+    },
+    {
+        "id": 190,
+        "question": "Který kov je tekutý při pokojové teplotě?",
+        "options": [
+            "Zlato",
+            "Olovo",
+            "Rtuť",
+            "Hliník"
+        ],
+        "correctAnswer": "Rtuť",
+        "difficulty": "medium",
+        "category": "Chemie"
+    },
+    {
+        "id": 191,
+        "question": "Jak se jmenuje největší stát v USA podle rozlohy?",
+        "options": [
+            "Texas",
+            "Kalifornie",
+            "Aljaška",
+            "Montana"
+        ],
+        "correctAnswer": "Aljaška",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 192,
+        "question": "Který český panovník nechal postavit Karlův most?",
+        "options": [
+            "Václav IV.",
+            "Karel IV.",
+            "Rudolf II.",
+            "Přemysl Otakar II."
+        ],
+        "correctAnswer": "Karel IV.",
+        "difficulty": "medium",
+        "category": "Historie"
+    },
+    {
+        "id": 193,
+        "question": "Jak se jmenuje hlavní postava v seriálu Simpsonovi (otec rodiny)?",
+        "options": [
+            "Bart",
+            "Homer",
+            "Marge",
+            "Ned"
+        ],
+        "correctAnswer": "Homer",
+        "difficulty": "medium",
+        "category": "Zábava"
+    },
+    {
+        "id": 194,
+        "question": "Kolik nohou má moucha?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "10"
+        ],
+        "correctAnswer": "6",
+        "difficulty": "medium",
+        "category": "Příroda"
+    },
+    {
+        "id": 195,
+        "question": "Která země vyhrála Mistrovství světa ve fotbale v roce 2018?",
+        "options": [
+            "Německo",
+            "Brazílie",
+            "Francie",
+            "Chorvatsko"
+        ],
+        "correctAnswer": "Francie",
+        "difficulty": "medium",
+        "category": "Sport"
+    },
+    {
+        "id": 196,
+        "question": "Jak se jmenuje nejmenší stát na světě?",
+        "options": [
+            "Monako",
+            "Vatikán",
+            "San Marino",
+            "Lichtenštejnsko"
+        ],
+        "correctAnswer": "Vatikán",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 197,
+        "question": "Kdo napsal divadelní hru Romeo a Julie?",
+        "options": [
+            "Molière",
+            "William Shakespeare",
+            "Goethe",
+            "Oscar Wilde"
+        ],
+        "correctAnswer": "William Shakespeare",
+        "difficulty": "medium",
+        "category": "Literatura"
+    },
+    {
+        "id": 198,
+        "question": "Jaký je chemický vzorec vody?",
+        "options": [
+            "CO2",
+            "H2O",
+            "O2",
+            "NaCl"
+        ],
+        "correctAnswer": "H2O",
+        "difficulty": "medium",
+        "category": "Chemie"
+    },
+    {
+        "id": 199,
+        "question": "Které město je hlavním městem Německa?",
+        "options": [
+            "Mnichov",
+            "Frankfurt",
+            "Hamburk",
+            "Berlín"
+        ],
+        "correctAnswer": "Berlín",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 200,
+        "question": "Jak se jmenuje nejrychlejší pták na světě (při střemhlavém letu)?",
+        "options": [
+            "Orel skalní",
+            "Sokol stěhovavý",
+            "Rorýs obecný",
+            "Albatros"
+        ],
+        "correctAnswer": "Sokol stěhovavý",
+        "difficulty": "medium",
+        "category": "Příroda"
+    },
+    {
+        "id": 201,
+        "question": "Který český prezident byl dramatikem?",
+        "options": [
+            "Václav Klaus",
+            "Miloš Zeman",
+            "Václav Havel",
+            "Tomáš Garrigue Masaryk"
+        ],
+        "correctAnswer": "Václav Havel",
+        "difficulty": "medium",
+        "category": "Politika"
+    },
+    {
+        "id": 202,
+        "question": "Kolik stupňů má pravý úhel?",
+        "options": [
+            "45",
+            "90",
+            "180",
+            "360"
+        ],
+        "correctAnswer": "90",
+        "difficulty": "medium",
+        "category": "Matematika"
+    },
+    {
+        "id": 203,
+        "question": "Která řeka protéká Londýnem?",
+        "options": [
+            "Seina",
+            "Temže",
+            "Dunaj",
+            "Rýn"
+        ],
+        "correctAnswer": "Temže",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 204,
+        "question": "Jak se jmenuje nejvyšší budova v ČR?",
+        "options": [
+            "AZ Tower",
+            "Žižkovská věž",
+            "City Tower",
+            "V Tower"
+        ],
+        "correctAnswer": "AZ Tower",
+        "difficulty": "medium",
+        "category": "Architektura"
+    },
+    {
+        "id": 205,
+        "question": "Který nástroj se používá k měření atmosférického tlaku?",
+        "options": [
+            "Teploměr",
+            "Barometr",
+            "Vlhkoměr",
+            "Anemometr"
+        ],
+        "correctAnswer": "Barometr",
+        "difficulty": "medium",
+        "category": "Fyzika"
+    },
+    {
+        "id": 206,
+        "question": "Jak se jmenuje hlavní město Polska?",
+        "options": [
+            "Krakov",
+            "Gdaňsk",
+            "Varšava",
+            "Vratislav"
+        ],
+        "correctAnswer": "Varšava",
+        "difficulty": "medium",
+        "category": "Geografie"
+    },
+    {
+        "id": 207,
+        "question": "Která země je známá svými pyramidami?",
+        "options": [
+            "Mexiko",
+            "Egypt",
+            "Peru",
+            "Súdán"
+        ],
+        "correctAnswer": "Egypt",
+        "difficulty": "medium",
+        "category": "Historie"
+    },
+    {
+        "id": 208,
+        "question": "Kdo zpívá hit 'Bohemian Rhapsody'?",
+        "options": [
+            "The Beatles",
+            "Queen",
+            "Rolling Stones",
+            "Led Zeppelin"
+        ],
+        "correctAnswer": "Queen",
+        "difficulty": "medium",
+        "category": "Hudba"
+    },
+    {
+        "id": 209,
+        "question": "Jaká je nejčastější krevní skupina v ČR?",
+        "options": [
+            "A",
+            "B",
+            "0",
+            "AB"
+        ],
+        "correctAnswer": "A",
+        "difficulty": "medium",
+        "category": "Biologie"
+    },
+    {
+        "id": 210,
+        "question": "Které město je známé svým filmovým festivalem v ČR?",
+        "options": [
+            "Zlín",
+            "Karlovy Vary",
+            "Plzeň",
+            "Ostrava"
+        ],
+        "correctAnswer": "Karlovy Vary",
+        "difficulty": "medium",
+        "category": "Kultura"
+    }
 ]

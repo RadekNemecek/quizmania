@@ -1,49 +1,57 @@
 <template>
     <header>
-        
         <MainNavigation />
-        
     </header>
-
-
-   <router-view />
-
+    
+    <main>
+        <router-view v-slot="{ Component }">
+            <transition name="fade" mode="out-in">
+                <component :is="Component" />
+            </transition>
+        </router-view>
+    </main>
 </template>
 
-<script>
-    import MainNavigation from './components/MainNavigation.vue';
-
-    export default {
-        components: {
-            MainNavigation
-        }
-    }
-
+<script setup>
+import MainNavigation from './components/MainNavigation.vue';
 </script>
 
 <style scoped>
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    z-index: 1000;
+    pointer-events: none;
+}
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
+header :deep(.main-navigation) {
+    pointer-events: auto;
+}
 
-    h1 {
-        font-size: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFB703;
-        
-    }
+main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; 
+}
 
-    img {
-        height: 60px;
-        width: auto;
-        margin-right: 20px;
-        text-align: center;
-    }
+/* Page Transitions */
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
 
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
 </style>
