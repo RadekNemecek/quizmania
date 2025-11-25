@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     
-    <img src="/img/logo3.png" alt="QuizMania Logo" class="logo">
+    <img src="/img/logo4.png" alt="QuizMania Logo" class="logo">
 
     <div class="glass-card">
         <h1>Otestuj se!</h1>
