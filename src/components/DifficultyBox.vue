@@ -34,7 +34,7 @@
 <script setup>
 import { ref } from 'vue';
 
-// Přijímáme počty otázek z Play.vue
+// Počty otázek z Play.vue
 const props = defineProps(['counts']);
 const emit = defineEmits(['loadQuestions']);
 

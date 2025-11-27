@@ -40,7 +40,6 @@
 }
 
 .glass-card {
-    /* Stejný styl jako zbytek aplikace - sjednocený vzhled */
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -51,7 +50,7 @@
 }
 
 h2 {
-    color: var(--accent); /* Žlutá/Oranžová z palety */
+    color: var(--accent);
     margin-bottom: 20px;
     font-size: 2rem;
     text-align: center;
@@ -60,7 +59,7 @@ h2 {
 }
 
 h3 {
-    color: var(--primary); /* Modrá z palety */
+    color: var(--primary);
     font-size: 1.3rem;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -101,7 +100,6 @@ li {
     color: #e0fbfc;
 }
 
-/* Vlastní odrážky pomocí CSS (čistší než emoji) */
 li::before {
     content: "•";
     color: var(--accent);

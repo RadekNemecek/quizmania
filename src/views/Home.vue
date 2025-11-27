@@ -35,12 +35,11 @@ onMounted(() => {
 .home-container {
     width: 100%;
     display: flex;
-    flex-direction: column; /* Důležité: prvky pod sebou */
-    align-items: center;    /* Zarovnání na střed */
+    flex-direction: column; 
+    align-items: center; 
     animation: zoomIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* --- LOGO STYLY (přeneseno z App.vue) --- */
 .logo {
     max-height: 200px;
     width: auto;
