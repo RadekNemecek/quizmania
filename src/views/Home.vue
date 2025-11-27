@@ -5,7 +5,7 @@
 
     <div class="glass-card">
         <h1>Otestuj se!</h1>
-        <p>Více než 200 otázek z zeměpisu, historie, vědy a dalších oblastí.</p>
+        <p>Více než 300 otázek z zeměpisu, historie, vědy a dalších oblastí.</p>
         
         <router-link to="/play" class="cta-button">
             HRÁT NYNÍ

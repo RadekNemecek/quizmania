@@ -4,7 +4,10 @@
       <h2>Pravidla hry</h2>
       
       <p class="intro">
-          Vítejte v <strong>Quiz Mania</strong>! Cíl je jednoduchý: Otestujte své znalosti a nahrajte co nejvyšší skóre.
+          Vítejte v <strong>QuizMania</strong>!
+      </p>
+      <p class="label">
+        Cíl je jednoduchý: Otestujte své znalosti a nahrajte co nejvyšší skóre.
       </p>
 
       <div class="section">
@@ -75,10 +78,18 @@ p {
 }
 
 .intro {
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
     color: #dbe9ee;
+    font-size: 1.4rem;
+}
+
+.label {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #a8dadc;
 }
 
 .outro {

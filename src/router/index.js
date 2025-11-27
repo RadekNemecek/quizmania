@@ -4,9 +4,9 @@ import Play from '../views/Play.vue'
 import About from '../views/About.vue'
 
 const routes = [
-    { path: '/', name: 'Home', component: Home }, // Výchozí cesta
-    { path: '/play', name: 'Play', component: Play }, // Stránka Hra
-    { path: '/about', name: 'About', component: About }, // Stránka O hře
+    { path: '/', name: 'Home', component: Home }, 
+    { path: '/play', name: 'Play', component: Play }, 
+    { path: '/about', name: 'About', component: About }, 
 ]
 
 const router = createRouter({
