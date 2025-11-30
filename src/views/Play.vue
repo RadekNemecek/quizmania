@@ -49,8 +49,38 @@
         <div class="final-score">{{ score }}</div>
         <p>bodů</p>
 
-        <div v-if="isNewRecord" class="new-record-msg">🌟 NOVÝ REKORD! 🌟</div>
+        <div v-if="isNewRecord" class="new-record-msg">
+          🌟 NOVÝ OSOBNÍ REKORD! 🌟
+        </div>
 
+        <div class="leaderboard-section">
+          <div v-if="!scoreSaved && !isSubmitting">
+            <input
+              v-model="nickname"
+              type="text"
+              placeholder="Tvoje přezdívka"
+              maxlength="15"
+              class="input-nickname"
+            />
+            <button
+              class="btn-save"
+              @click="submitScore"
+              :disabled="!nickname || nickname.length < 2"
+            >
+              ULOŽIT DO ŽEBŘÍČKU
+            </button>
+          </div>
+
+          <div v-else-if="isSubmitting" class="status-msg">⏳ Ukládám...</div>
+
+          <div v-else class="status-msg success">
+            ✅ Uloženo!
+            <br />
+            <router-link to="/leaderboard" class="link-to-leaderboard"
+              >Zobrazit žebříček</router-link
+            >
+          </div>
+        </div>
         <button class="btn-restart" @click="resetGame">HRÁT ZNOVU</button>
       </div>
     </div>
@@ -60,6 +90,15 @@
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import DifficultyBox from "@/components/DifficultyBox.vue";
+import { useSound } from "@/composables/useSound"; 
+
+// --- KONFIGURACE JSONBIN.IO ---
+const BIN_ID = "692c12e5d0ea881f40093c98";
+const API_KEY = "$2a$10$HQTH2FVO91KQ84jkInb3VunrI5sJYKr8lYHh8R1V5FoLN6OEMSUia";
+const URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
+
+// Použití globálního zvuku
+const { playSound } = useSound();
 
 const score = ref(0);
 const lives = ref(3);
@@ -75,6 +114,11 @@ const isAnswered = ref(false);
 const gameOver = ref(false);
 const gameWon = ref(false);
 const isNewRecord = ref(false);
+
+const nickname = ref("");
+const scoreSaved = ref(false);
+const isSubmitting = ref(false);
+const currentDifficulty = ref("");
 
 const timer = ref(15);
 const maxTime = 15;
@@ -92,7 +136,6 @@ const timerColor = computed(() => {
   return "var(--success)";
 });
 
-// --- Načtení dat hned po startu ---
 onMounted(async () => {
   try {
     const res = await fetch(import.meta.env.BASE_URL + "data/questions.json");
@@ -104,16 +147,13 @@ onMounted(async () => {
       medium: data.filter((q) => q.difficulty === "medium").length,
       hard: data.filter((q) => q.difficulty === "hard").length,
     };
-
     loading.value = false;
   } catch (e) {
     console.error("Chyba při načítání JSON:", e);
   }
 });
 
-// --- POMOCNÁ FUNKCE: Fisher-Yates Shuffle (Kvalitní míchání) ---
 const shuffleArray = (array) => {
-  // Vytvoříme kopii pole, abychom neměnili originál
   let shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -123,22 +163,16 @@ const shuffleArray = (array) => {
 };
 
 const loadQuestions = (level) => {
-  // Vyfiltrujeme otázky podle obtížnosti
+  playSound("click");
+  currentDifficulty.value = level;
+
   const filtered = allQuestions.value.filter(
     (q) => q.difficulty === level.toLowerCase()
   );
-
-  // Pořádně je zamícháme (Fisher-Yates)
   const shuffled = shuffleArray(filtered);
-
-  // Hra bude trvat tak dlouho, dokud jsou otázky nebo životy.
   question.value = shuffled;
-
-  // Míchání pořadí odpovědí u každé otázky
   question.value.forEach((q) => {
-    if (q.options) {
-      q.options = shuffleArray(q.options);
-    }
+    if (q.options) q.options = shuffleArray(q.options);
   });
 
   if (question.value.length) {
@@ -151,7 +185,6 @@ const loadQuestions = (level) => {
 const startTimer = () => {
   if (interval) clearInterval(interval);
   timer.value = maxTime;
-
   interval = setInterval(() => {
     if (timer.value > 0) {
       timer.value--;
@@ -165,8 +198,10 @@ const startTimer = () => {
 const handleLifeLoss = () => {
   lives.value--;
   if (lives.value === 0) {
+    playSound("wrong");
     endGame();
   } else {
+    playSound("wrong");
     nextQuestion();
   }
 };
@@ -180,17 +215,18 @@ const checkAnswer = (option, event) => {
   const isCorrect = option === currentQuestion.value.correctAnswer;
 
   if (isCorrect) {
+    playSound("correct");
     btn.classList.add("correct");
     score.value += baseScore + timer.value * 5;
   } else {
+    playSound("wrong");
     btn.classList.add("incorrect");
-    const allBtns = document.querySelectorAll(".btn-answer");
-    allBtns.forEach((b) => {
+    lives.value--;
+    document.querySelectorAll(".btn-answer").forEach((b) => {
       if (b.textContent.trim() === currentQuestion.value.correctAnswer) {
         b.classList.add("correct-hint");
       }
     });
-    lives.value--;
   }
 
   setTimeout(() => {
@@ -217,18 +253,65 @@ const nextQuestion = () => {
 const endGame = () => {
   clearInterval(interval);
   gameOver.value = lives.value === 0;
-  saveHighScore();
-};
 
-const saveHighScore = () => {
+  if (gameWon.value) {
+    playSound("win");
+  } else {
+    playSound("gameover");
+  }
+
   const storedScore = localStorage.getItem("quizHighScore") || 0;
   if (score.value > parseInt(storedScore)) {
     localStorage.setItem("quizHighScore", score.value);
     isNewRecord.value = true;
+    // if (gameWon.value) confetti();
+  }
+};
+
+const submitScore = async () => {
+  if (!nickname.value) return;
+  playSound("click");
+  isSubmitting.value = true;
+
+  try {
+    const getReq = await fetch(URL, {
+      headers: { "X-Master-Key": API_KEY },
+    });
+    const getData = await getReq.json();
+
+    let currentScores = getData.record.scores || [];
+
+    currentScores.push({
+      name: nickname.value,
+      score: score.value,
+      difficulty: currentDifficulty.value,
+      date: new Date().toLocaleDateString("cs-CZ"),
+    });
+
+    currentScores.sort((a, b) => b.score - a.score);
+    const top50 = currentScores.slice(0, 50);
+
+    await fetch(URL, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Master-Key": API_KEY,
+      },
+      body: JSON.stringify({ scores: top50 }),
+    });
+
+    scoreSaved.value = true;
+    playSound("correct");
+  } catch (e) {
+    console.error("Chyba ukládání:", e);
+    alert("Chyba připojení k žebříčku.");
+  } finally {
+    isSubmitting.value = false;
   }
 };
 
 const resetGame = () => {
+  playSound("click");
   score.value = 0;
   lives.value = 3;
   currentQuestionIndex.value = 0;
@@ -238,6 +321,11 @@ const resetGame = () => {
   isNewRecord.value = false;
   DifficultyModal.value = true;
   isAnswered.value = false;
+
+  nickname.value = "";
+  scoreSaved.value = false;
+  isSubmitting.value = false;
+  currentDifficulty.value = "";
 };
 </script>
 
@@ -267,15 +355,6 @@ const resetGame = () => {
   letter-spacing: 5px;
 }
 
-.progress-text {
-  text-align: center;
-  color: #a8dadc;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-/* Timer */
 .timer-wrapper {
   height: 10px;
   background: rgba(255, 255, 255, 0.1);
@@ -288,7 +367,6 @@ const resetGame = () => {
   transition: width 1s linear, background-color 0.5s;
 }
 
-/* Otázka */
 .question-card {
   background: #fff;
   color: #023047;
@@ -305,7 +383,6 @@ const resetGame = () => {
   margin-bottom: 25px;
 }
 
-/* Odpovědi */
 .answers-stack {
   display: flex;
   flex-direction: column;
@@ -326,13 +403,11 @@ const resetGame = () => {
   text-align: left;
   transition: transform 0.1s;
 }
-
 .btn-answer:active {
   transform: translateY(4px);
   box-shadow: 0 0 0 #126e82;
 }
 
-/* Stavy odpovědí */
 .btn-answer.correct {
   background: var(--success);
   box-shadow: 0 4px 0 #27ae60;
@@ -348,7 +423,6 @@ const resetGame = () => {
   background: rgba(46, 204, 113, 0.2);
 }
 
-/* Výsledek */
 .result-overlay {
   position: fixed;
   top: 0;
@@ -363,14 +437,16 @@ const resetGame = () => {
 }
 .result-content {
   text-align: center;
+  width: 90%;
+  max-width: 400px;
 }
 .result-content h1 {
   color: var(--accent);
-  margin-bottom: 20px;
-  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-size: 2rem;
 }
 .final-score {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #fff;
   line-height: 1;
@@ -378,12 +454,65 @@ const resetGame = () => {
 .new-record-msg {
   color: var(--success);
   font-weight: bold;
-  font-size: 1.5rem;
   margin: 10px 0;
   animation: pop 1s infinite;
 }
+
+.leaderboard-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-nickname {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+.input-nickname:focus {
+  outline: 3px solid var(--accent);
+}
+
+.btn-save {
+  background: var(--success);
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 0 #1e8449;
+}
+.btn-save:disabled {
+  background: #95a5a6;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.status-msg {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #a8dadc;
+}
+.status-msg.success {
+  color: var(--success);
+}
+.link-to-leaderboard {
+  color: var(--accent);
+  text-decoration: underline;
+  display: block;
+  margin-top: 5px;
+}
+
 .btn-restart {
-  margin-top: 30px;
+  margin-top: 10px;
   background: var(--accent);
   color: #023047;
   padding: 15px 40px;
@@ -392,7 +521,6 @@ const resetGame = () => {
   font-size: 1.2rem;
 }
 
-/* Transitions */
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all 0.4s ease;

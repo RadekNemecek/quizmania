@@ -1,12 +1,20 @@
 <template>
      <nav class="main-navigation">
-        <router-link to="/">Domů</router-link>
-        <router-link to="/play">Hrát</router-link>
-        <router-link to="/about">O hře</router-link>
+         
+         <router-link to="/" @click="playSound('click')">Domů</router-link>
+         <router-link to="/play" @click="playSound('click')">Hrát</router-link>
+         <router-link to="/leaderboard" @click="playSound('click')">Žebříček</router-link>
+         <router-link to="/about" @click="playSound('click')">O hře</router-link>
+         <button class="nav-btn mute-btn" @click="toggleMute" :title="isMuted ? 'Zapnout zvuk' : 'Vypnout zvuk'">
+             {{ isMuted ? '🔇' : '🔊' }}
+         </button>
     </nav>
 </template>
 
 <script setup>
+import { useSound } from '@/composables/useSound';
+
+const { playSound, toggleMute, isMuted } = useSound();
 </script>
 
 <style scoped>
@@ -20,6 +28,9 @@ nav {
     gap: 10px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -58,5 +69,26 @@ a:active {
     box-shadow: 
         0 0 0 #c45d00, 
         0 0 0 rgba(0,0,0,0);
+}
+
+/* Styl pro mute tlačítko */
+.mute-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    transition: background 0.2s;
+}
+
+.mute-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 </style>

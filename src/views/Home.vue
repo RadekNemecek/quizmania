@@ -7,7 +7,7 @@
         <h1>Otestuj se!</h1>
         <p>Více než 300 otázek z vědy, zeměpisu, historie a dalších oblastí.</p>
         
-        <router-link to="/play" class="cta-button">
+        <router-link to="/play" class="cta-button" @click="playSound('click')">
             HRÁT NYNÍ
         </router-link>
 
@@ -20,7 +20,9 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useSound } from '@/composables/useSound';
 
+const { playSound } = useSound();
 const highScore = ref(0);
 
 onMounted(() => {
@@ -45,7 +47,7 @@ onMounted(() => {
     width: auto;
     position: relative;
     z-index: 20;
-    margin-bottom: -70px; /* Překrytí */
+    margin-bottom: -70px; 
     filter: drop-shadow(0 15px 15px rgba(0,0,0,0.4));
     animation: float 6s ease-in-out infinite;
 }
@@ -54,16 +56,12 @@ onMounted(() => {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    
-    /* Padding nahoře pro logo */
     padding-top: 100px; 
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    
     position: relative;
     z-index: 1;
-    
     width: 100%;
     max-width: 500px;
     text-align: center;

@@ -10,7 +10,7 @@
                     :key="level"
                     class="btn-difficulty"
                     :class="{selected: level === selectedDifficulty}"
-                    @click="selectedDifficulty = level"
+                    @click="selectLevel(level)"
                 >
                     <span class="level-name">{{ translateLevel(level) }}</span>
                     
@@ -33,16 +33,23 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useSound } from '@/composables/useSound';
 
-// Počty otázek z Play.vue
 const props = defineProps(['counts']);
 const emit = defineEmits(['loadQuestions']);
+const { playSound } = useSound();
 
 const difficulties = ['Easy', 'Medium', 'Hard'];
 const selectedDifficulty = ref(null);
 
+const selectLevel = (level) => {
+    selectedDifficulty.value = level;
+    playSound('click');
+};
+
 const notifyLoadQuestions = () => {
     if (selectedDifficulty.value) {
+        playSound('click');
         emit('loadQuestions', selectedDifficulty.value);
     }
 };
@@ -106,8 +113,6 @@ p {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.2s ease;
-    
-    /* Flexbox pro zarovnání textu a čísla */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +130,6 @@ p {
     transform: scale(1.02);
 }
 
-/* Styl pro číslo počtu otázek */
 .count-badge {
     background: rgba(255,255,255,0.2);
     font-size: 0.9rem;
