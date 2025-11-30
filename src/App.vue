@@ -41,7 +41,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px; 
+    /* ZVĚTŠÍME HORIZONT ODSATZENÍ */
+    margin-top: 100px; 
+    /* Přidáme padding dole, ať to není nalepené */
+    padding-bottom: 20px;
 }
 
 /* Page Transitions */
@@ -53,5 +56,12 @@ main {
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
+}
+
+/* Pojistka pro mobily - pokud je menu vysoké */
+@media (max-width: 450px) {
+    main {
+        margin-top: 110px;
+    }
 }
 </style>

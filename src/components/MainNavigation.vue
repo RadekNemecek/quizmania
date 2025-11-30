@@ -22,30 +22,32 @@ nav {
     display: flex;
     background: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(10px);
-    padding: 8px; 
+    padding: 5px; /* Zmenšeno z 8px */
     border-radius: 60px;
     margin-bottom: 25px;
-    gap: 10px;
+    gap: 5px; /* Zmenšeno z 10px */
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; /* Zabrání zalomení na nový řádek */
     justify-content: center;
     align-items: center;
+    overflow-x: auto; /* Kdyby to jo nevyšlo, půjde posouvat do boku */
 }
 
 a {
     text-decoration: none;
     color: #fff; 
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Zmenšeno padding */
     border-radius: 40px;
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* Trochu menší písmo */
     text-align: center;
     position: relative;
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
     border: 1px solid rgba(255,255,255,0.1);
     border-bottom: none; 
+    white-space: nowrap; /* Text se nebude lámat */
 }
 
 a:hover {
@@ -56,19 +58,9 @@ a:hover {
 a.router-link-active {
     color: #023047; 
     background: linear-gradient(180deg, #FFB703 0%, #fb8500 100%);
-    box-shadow: 
-        0 4px 0 #c45d00,
-        0 5px 10px rgba(0,0,0,0.3);
-
+    box-shadow: 0 4px 0 #c45d00, 0 5px 10px rgba(0,0,0,0.3);
     border-top: 1px solid rgba(255,255,255,0.5);
     transform: scale(1.05) translateY(-2px);
-}
-
-a:active {
-    transform: scale(1.05) translateY(2px);
-    box-shadow: 
-        0 0 0 #c45d00, 
-        0 0 0 rgba(0,0,0,0);
 }
 
 /* Styl pro mute tlačítko */
@@ -76,19 +68,32 @@ a:active {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 35px; /* Zmenšeno */
+    height: 35px; /* Zmenšeno */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
-    transition: background 0.2s;
+    margin-right: 2px;
+    flex-shrink: 0; /* Tlačítko se nebude mačkat */
 }
 
-.mute-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
+/* --- RESPONZIVITA PRO MOBILY --- */
+@media (max-width: 450px) {
+    nav {
+        padding: 4px;
+        gap: 5px;
+    }
+    a {
+        padding: 6px 10px;
+        font-size: 0.85rem; /* Menší písmo na mobilu */
+    }
+    .mute-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
 }
 </style>

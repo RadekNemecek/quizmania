@@ -85,7 +85,11 @@ onMounted(async () => {
         if (!req.ok) throw new Error('Network response was not ok');
         
         const data = await req.json();
-        scores.value = data.record.scores || [];
+        let loadedScores = data.record.scores || [];
+
+        loadedScores.sort((a, b) => b.score - a.score);
+    
+        scores.value = loadedScores;
         
     } catch (e) {
         console.error(e);
@@ -220,4 +224,35 @@ td {
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 .pop-in { animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 @keyframes popIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+
+/* --- RESPONZIVITA PRO MOBILY --- */
+@media (max-width: 500px) {
+    /* Skryjeme sloupec Datum (v hlavičce i v těle tabulky) */
+    th:nth-child(5), 
+    td:nth-child(5) {
+        display: none;
+    }
+
+    /* Zmenšíme paddingy */
+    th, td {
+        padding: 8px 4px;
+        font-size: 0.85rem;
+    }
+
+    /* Zmenšíme odznáčky */
+    .badge {
+        font-size: 0.65rem;
+        padding: 2px 5px;
+    }
+
+    /* Zmenšíme nadpis */
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .glass-card {
+        padding: 20px 10px; /* Méně místa uvnitř karty */
+        width: 95%;
+    }
+}
 </style>
